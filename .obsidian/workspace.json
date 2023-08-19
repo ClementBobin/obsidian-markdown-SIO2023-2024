@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "4b40b13ae90e7c05",
+        "id": "6a2e56237d3cf7a8",
         "type": "tabs",
         "children": [
           {
-            "id": "f6fe83ec6795786b",
+            "id": "e0eb2899b771a08c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "language/React/React.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "language/React/React.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "language/React/React.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "language/React/React.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,43 +138,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f6fe83ec6795786b",
+  "active": "e0eb2899b771a08c",
   "lastOpenFiles": [
-    "language/HTML.md",
-    "Project",
+    "Programming/Basic math operation.md",
+    "Programming/Learning to Code.md",
+    "Programming/Rules/Inheritance.md",
+    "Programming/Rules/Premature Optimization.md",
+    "Programming/Rules/Abstraction.md",
+    "Programming/Rules/Naming Things in Code.md",
+    "Programming/Rules/Never Nester.md",
+    "Programming/Rules/Don't Write Comments.md",
+    "Programming/Rules/Dependency Injection.md",
+    "Programming/Rules",
+    "Programming",
+    "hardware/Arduino.md",
+    "documentation/Le développement informatique.md",
+    "asset/image/Base convertion.png",
+    "asset/image/ASCII.png",
+    "asset/image/Principe_base.png",
+    "asset/Principe_base.png",
+    "language/Php.md",
     "language/Css.md",
-    "language/Javascript.md",
-    "language/React/Module/Libraries.md",
-    "language/React/Module/Tailwindcss.md",
-    "language/Module/Framer-motion.md",
-    "language/Module",
-    "language/React/Module/React _ Router_Dom.md",
-    "language/React/Module/Framer-motion.md",
-    "language/React/Module/Three.js.md",
-    "language/React/Module/Email.js.md",
-    "Untitled.canvas",
-    "2023-08-02.md",
-    "macos/vscode-macos-shortcuts.md",
-    "networking/dns.md",
-    "IP.md",
-    "linux/Vs-code-shortcut.md",
-    "tools/vscode.md",
-    "linux/Vs.md",
-    "language/React/React.md",
+    "language/HTML.md",
+    "asset/Cours-Le-developpement-informatique.pdf.md",
     "documentation/Type of file.md",
-    "tools/wsl.md",
-    "networking/wireguard.md",
-    "networking/udp.md",
-    "networking/twisted-pair-cables.md",
-    "networking/tcp.md",
-    "networking/dns-record-types.md",
-    "language/React/Framework",
-    "language/React/Module",
-    "language/React",
-    "documentation",
-    "lecon",
-    "language",
-    "2023-2024 school",
-    "code/Maria db"
+    "networking/Le réseau.md",
+    "2023-08-15.md",
+    "macos/vscode-macos-shortcuts.md",
+    "asset/image/modèle iso.png",
+    "asset/image/encapsulation.png",
+    "asset/image/modele tcp ip example 2.png",
+    "asset/image/modele tcp ip example.png",
+    "asset/image/traditional 3.png",
+    "asset/image/traditional 2.png",
+    "asset/pdf/Synthese-Arduino-1.pdf",
+    "asset/pdf/Exercices-Traitement-du-signal.pdf",
+    "asset/pdf/Cours-Le-developpement-informatique.pdf",
+    "asset/pdf/03-Le-filtrage.pdf",
+    "asset/pdf/02-Traitement-analogique.pdf",
+    "asset/pdf/01-Le-regime-sinusoidal.pdf",
+    "asset/image",
+    "asset/pdf",
+    "tools/vscode.md",
+    "linux/Vs-code-shortcut.md",
+    "misc/traitement analogique de l'information.md",
+    "misc/Signal sinusoidale.md",
+    "misc/Filtrage.md",
+    "cloud/what-is-cloud-computing.md",
+    "cloud/provider/civo.md",
+    "Untitled.canvas"
   ]
 }
