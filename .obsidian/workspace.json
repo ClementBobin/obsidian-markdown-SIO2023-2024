@@ -8,11 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e0eb2899b771a08c",
+            "id": "3e09af82d1bce39e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Programming/Rules/Never Nester.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Programming/Rules/Never Nester.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Programming/Rules/Never Nester.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Programming/Rules/Never Nester.md"
+              }
             }
           }
         ]
@@ -138,54 +146,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e0eb2899b771a08c",
+  "active": "3e09af82d1bce39e",
   "lastOpenFiles": [
     "Programming/Basic math operation.md",
+    "Programming/HTTP Status Codes.md",
     "Programming/Learning to Code.md",
-    "Programming/Rules/Inheritance.md",
-    "Programming/Rules/Premature Optimization.md",
-    "Programming/Rules/Abstraction.md",
-    "Programming/Rules/Naming Things in Code.md",
-    "Programming/Rules/Never Nester.md",
-    "Programming/Rules/Don't Write Comments.md",
-    "Programming/Rules/Dependency Injection.md",
-    "Programming/Rules",
-    "Programming",
+    "networking/Le réseau.md",
+    "misc/traitement analogique de l'information.md",
+    "misc/Signal sinusoidale.md",
+    "misc/Filtrage.md",
     "hardware/Arduino.md",
     "documentation/Le développement informatique.md",
-    "asset/image/Base convertion.png",
-    "asset/image/ASCII.png",
-    "asset/image/Principe_base.png",
-    "asset/Principe_base.png",
+    "asset/pdf/Synthese-Arduino-1.pdf",
+    "asset/image/types de réseaux.png",
+    "asset/image/traditional 3.png",
+    "asset/image/traditional 2.png",
+    "asset/image/traditional 1.png",
+    "asset/image/topologie mailée.png",
+    "asset/image/topologie en étoile.png",
+    "asset/image/topologie bus.png",
+    "asset/image/separation ip.png",
+    "asset/image/modèle iso.png",
+    "asset/image/modèle TCP ip.png",
+    "asset/pdf/Exercices-Traitement-du-signal.pdf",
+    "asset/pdf/03-Le-filtrage.pdf",
+    "asset/pdf/02-Traitement-analogique.pdf",
+    "asset/pdf/01-Le-regime-sinusoidal.pdf",
+    "asset/pdf",
+    "asset/image",
+    "asset",
+    "Programming/Rules/Premature Optimization.md",
+    "Programming/Rules/Never Nester.md",
+    "Programming/Rules/Naming Things in Code.md",
+    "Programming/Rules/Inheritance.md",
+    "Programming/Rules/Don't Write Comments.md",
+    "Programming/Rules/Dependency Injection.md",
+    "Programming/Rules/Abstraction.md",
+    "Programming/Rules",
+    "Programming",
     "language/Php.md",
     "language/Css.md",
     "language/HTML.md",
     "asset/Cours-Le-developpement-informatique.pdf.md",
     "documentation/Type of file.md",
-    "networking/Le réseau.md",
     "2023-08-15.md",
     "macos/vscode-macos-shortcuts.md",
-    "asset/image/modèle iso.png",
-    "asset/image/encapsulation.png",
-    "asset/image/modele tcp ip example 2.png",
-    "asset/image/modele tcp ip example.png",
-    "asset/image/traditional 3.png",
-    "asset/image/traditional 2.png",
-    "asset/pdf/Synthese-Arduino-1.pdf",
-    "asset/pdf/Exercices-Traitement-du-signal.pdf",
-    "asset/pdf/Cours-Le-developpement-informatique.pdf",
-    "asset/pdf/03-Le-filtrage.pdf",
-    "asset/pdf/02-Traitement-analogique.pdf",
-    "asset/pdf/01-Le-regime-sinusoidal.pdf",
-    "asset/image",
-    "asset/pdf",
     "tools/vscode.md",
     "linux/Vs-code-shortcut.md",
-    "misc/traitement analogique de l'information.md",
-    "misc/Signal sinusoidale.md",
-    "misc/Filtrage.md",
     "cloud/what-is-cloud-computing.md",
-    "cloud/provider/civo.md",
     "Untitled.canvas"
   ]
 }
