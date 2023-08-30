@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "6a2e56237d3cf7a8",
+        "id": "83564a8bea74cb84",
         "type": "tabs",
         "children": [
           {
-            "id": "3e09af82d1bce39e",
+            "id": "bfe6723979acd7a2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming/Rules/Never Nester.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,11 +81,10 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/Rules/Never Nester.md",
-                "collapseAll": false,
-                "extraContext": false,
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/Rules/Never Nester.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Programming/Rules/Never Nester.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,10 +138,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3e09af82d1bce39e",
+  "active": "f2da540d052356b2",
   "lastOpenFiles": [
-    "Programming/Basic math operation.md",
     "Programming/HTTP Status Codes.md",
+    "databases/Metabase.md",
+    "infra/Render.md",
+    "tools/tooltip.md",
+    "language/React/Module/Tailwindcss.md",
+    "Tailwind CSS.md",
+    "tools/Marp for VS Code.md",
+    "tools/Yumi boot.md",
+    "apps/cloudflare-tunnels.md",
+    "apps/grafana.md",
+    "apps/kasm.md",
+    "apps/longhorn.md",
+    "apps/nginx.md",
+    "apps/passbolt.md",
+    "apps/portainer.md",
+    "apps/argocd.md",
+    "Programming/Rules/Never Nester.md",
+    "Programming/Basic math operation.md",
     "Programming/Learning to Code.md",
     "networking/Le réseau.md",
     "misc/traitement analogique de l'information.md",
@@ -176,24 +184,8 @@
     "asset/image",
     "asset",
     "Programming/Rules/Premature Optimization.md",
-    "Programming/Rules/Never Nester.md",
-    "Programming/Rules/Naming Things in Code.md",
-    "Programming/Rules/Inheritance.md",
-    "Programming/Rules/Don't Write Comments.md",
-    "Programming/Rules/Dependency Injection.md",
-    "Programming/Rules/Abstraction.md",
     "Programming/Rules",
     "Programming",
-    "language/Php.md",
-    "language/Css.md",
-    "language/HTML.md",
-    "asset/Cours-Le-developpement-informatique.pdf.md",
-    "documentation/Type of file.md",
-    "2023-08-15.md",
-    "macos/vscode-macos-shortcuts.md",
-    "tools/vscode.md",
-    "linux/Vs-code-shortcut.md",
-    "cloud/what-is-cloud-computing.md",
     "Untitled.canvas"
   ]
 }
