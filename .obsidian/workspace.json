@@ -4,18 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "83564a8bea74cb84",
+        "id": "1dd78964463b5c5d",
         "type": "tabs",
         "children": [
           {
-            "id": "bfe6723979acd7a2",
+            "id": "d104318ba7832d79",
             "type": "leaf",
             "state": {
               "type": "empty",
               "state": {}
             }
+          },
+          {
+            "id": "c2b5e7d015c77f81",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "databases/Metabase.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "databases/Metabase.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -97,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "databases/Metabase.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "databases/Metabase.md"
+              }
             }
           }
         ]
@@ -140,13 +157,16 @@
   },
   "active": "f2da540d052356b2",
   "lastOpenFiles": [
+    "infra/Render.md",
+    "databases/Metabase.md",
+    "tools/Tooltip.md",
+    "tools/Marp for VS Code.md",
+    "tools/YUMI.md",
     "Programming/HTTP Status Codes.md",
     "databases/Metabase.md",
-    "infra/Render.md",
     "tools/tooltip.md",
     "language/React/Module/Tailwindcss.md",
     "Tailwind CSS.md",
-    "tools/Marp for VS Code.md",
     "tools/Yumi boot.md",
     "apps/cloudflare-tunnels.md",
     "apps/grafana.md",
@@ -162,9 +182,6 @@
     "networking/Le réseau.md",
     "misc/traitement analogique de l'information.md",
     "misc/Signal sinusoidale.md",
-    "misc/Filtrage.md",
-    "hardware/Arduino.md",
-    "documentation/Le développement informatique.md",
     "asset/pdf/Synthese-Arduino-1.pdf",
     "asset/image/types de réseaux.png",
     "asset/image/traditional 3.png",
@@ -183,7 +200,6 @@
     "asset/pdf",
     "asset/image",
     "asset",
-    "Programming/Rules/Premature Optimization.md",
     "Programming/Rules",
     "Programming",
     "Untitled.canvas"
