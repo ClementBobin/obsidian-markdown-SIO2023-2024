@@ -14,21 +14,8 @@
               "type": "empty",
               "state": {}
             }
-          },
-          {
-            "id": "c2b5e7d015c77f81",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "databases/Metabase.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "databases/Metabase.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -111,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "databases/Metabase.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "databases/Metabase.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -155,15 +138,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f2da540d052356b2",
+  "active": "d104318ba7832d79",
   "lastOpenFiles": [
-    "infra/Render.md",
+    "misc/Rotational Motion.md",
+    "misc/codage informatique binaire.md",
+    "networking/réseau/Asynchronous and Synchronous Transmission.md",
+    "networking/ordi",
+    "networking/ordi/communication/Serial Communication/Asynchronous and Synchronous Transmission.md",
+    "networking/ordi/communication/Serial Communication",
+    "networking/communication/Nouveau dossier",
+    "networking/communication/Asynchronous and Synchronous Transmission.md",
+    "networking/ordi/communication/réseau/Trame Ethernet.md",
+    "networking/communication/réseau/Asynchronous and Synchronous Transmission.md",
+    "networking/ordi/communication/réseau",
+    "networking/ordi/communication",
+    "networking/Nouveau dossier",
+    "asset/image/logique and binaire.jpg",
+    "asset/image/example bit signe.jpg",
+    "asset/image/bit signe.jpg",
+    "asset/image/addition binaire.jpg",
+    "networking/réseau/Trame Ethernet.md",
+    "asset/image/trame ethernet.PNG",
+    "asset/image/datagramme ip.PNG",
+    "networking/réseau",
+    "misc/TRIZ.md",
     "databases/Metabase.md",
+    "infra/Render.md",
     "tools/Tooltip.md",
     "tools/Marp for VS Code.md",
     "tools/YUMI.md",
     "Programming/HTTP Status Codes.md",
-    "databases/Metabase.md",
     "tools/tooltip.md",
     "language/React/Module/Tailwindcss.md",
     "Tailwind CSS.md",
@@ -175,33 +179,13 @@
     "apps/nginx.md",
     "apps/passbolt.md",
     "apps/portainer.md",
-    "apps/argocd.md",
-    "Programming/Rules/Never Nester.md",
-    "Programming/Basic math operation.md",
-    "Programming/Learning to Code.md",
-    "networking/Le réseau.md",
-    "misc/traitement analogique de l'information.md",
-    "misc/Signal sinusoidale.md",
     "asset/pdf/Synthese-Arduino-1.pdf",
     "asset/image/types de réseaux.png",
     "asset/image/traditional 3.png",
     "asset/image/traditional 2.png",
     "asset/image/traditional 1.png",
-    "asset/image/topologie mailée.png",
-    "asset/image/topologie en étoile.png",
-    "asset/image/topologie bus.png",
-    "asset/image/separation ip.png",
-    "asset/image/modèle iso.png",
-    "asset/image/modèle TCP ip.png",
     "asset/pdf/Exercices-Traitement-du-signal.pdf",
     "asset/pdf/03-Le-filtrage.pdf",
-    "asset/pdf/02-Traitement-analogique.pdf",
-    "asset/pdf/01-Le-regime-sinusoidal.pdf",
-    "asset/pdf",
-    "asset/image",
-    "asset",
-    "Programming/Rules",
-    "Programming",
     "Untitled.canvas"
   ]
 }
