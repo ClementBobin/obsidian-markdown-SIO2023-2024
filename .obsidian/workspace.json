@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "83564a8bea74cb84",
+        "id": "04f2de542f1149cd",
         "type": "tabs",
         "children": [
           {
-            "id": "bfe6723979acd7a2",
+            "id": "a7bb7db78ac00247",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "router",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,19 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
+            }
+          },
+          {
+            "id": "96206b578eb1ae5f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
             }
           }
         ]
@@ -133,59 +152,61 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "markdown-importer:Open format converter": false,
+      "random-note:Open random note": false
     }
   },
-  "active": "f2da540d052356b2",
+  "active": "a7bb7db78ac00247",
   "lastOpenFiles": [
-    "databases/Metabase.md",
-    "infra/Render.md",
-    "tools/tooltip.md",
-    "language/React/Module/Tailwindcss.md",
-    "Tailwind CSS.md",
+    "tools/YUMI.md",
     "tools/Marp for VS Code.md",
-    "tools/Yumi boot.md",
-    "apps/cloudflare-tunnels.md",
-    "apps/grafana.md",
-    "apps/kasm.md",
-    "apps/longhorn.md",
-    "apps/nginx.md",
-    "apps/passbolt.md",
-    "apps/portainer.md",
-    "apps/argocd.md",
-    "Programming/Rules/Never Nester.md",
-    "Programming/Basic math operation.md",
+    "networking/ordi/communication/réseau/Trame Ethernet.md",
+    "networking/ordi/communication/réseau/Synthèse Internet.md",
+    "networking/ordi/communication/réseau/Synthesis The Web.md",
+    "networking/ordi/communication/Serial Communication/Protocole.md",
+    "networking/ordi/communication/Serial Communication/BUS CAN.md",
+    "networking/ordi/communication/Serial Communication/Asynchronous and Synchronous Transmission.md",
+    "networking/ordi/communication/réseau",
+    "networking/ordi/communication/Serial Communication",
+    "networking/ordi/communication",
+    "networking/ordi",
+    "misc/énergie.md",
+    "misc/codage informatique binaire.md",
+    "misc/TRIZ.md",
+    "misc/Sound Waves.md",
+    "misc/Sinusoidal Signals.md",
+    "misc/Rotational Motion.md",
+    "misc/Energy Storage.md",
+    "misc/Electromagnetic Waves.md",
+    "language/htmx.md",
+    "language/React/Module/Tooltip.md",
+    "infra/VirtualBox.md",
+    "infra/VMware Workstation.md",
+    "infra/Render.md",
+    "infra/Hypervisors.md",
+    "databases/Metabase.md",
+    "asset/pdf/conversion énergétique fluide - méca.pdf",
+    "asset/pdf/analyse énergétique d'un système.pdf",
+    "asset/pdf/Démarche projet.pdf",
+    "asset/image/trame ethernet.PNG",
+    "asset/image/onde sonore célérité.jpg",
+    "asset/image/logique and binaire.jpg",
+    "asset/image/example bit signe.jpg",
+    "asset/image/datagramme ip.PNG",
+    "asset/image/addition binaire.jpg",
+    "administra/Démarche.md",
+    "administra",
+    "Programming/http-status-codes.md",
     "Programming/HTTP Status Codes.md",
-    "Programming/Learning to Code.md",
-    "networking/Le réseau.md",
-    "misc/traitement analogique de l'information.md",
-    "misc/Signal sinusoidale.md",
-    "misc/Filtrage.md",
-    "hardware/Arduino.md",
-    "documentation/Le développement informatique.md",
-    "asset/pdf/Synthese-Arduino-1.pdf",
+    "language/React/Module",
+    "language/React/Framework",
+    "images.jpg",
+    "asset/image/bit signe.jpg",
     "asset/image/types de réseaux.png",
     "asset/image/traditional 3.png",
-    "asset/image/traditional 2.png",
-    "asset/image/traditional 1.png",
-    "asset/image/topologie mailée.png",
-    "asset/image/topologie en étoile.png",
-    "asset/image/topologie bus.png",
-    "asset/image/separation ip.png",
-    "asset/image/modèle iso.png",
-    "asset/image/modèle TCP ip.png",
-    "asset/pdf/Exercices-Traitement-du-signal.pdf",
-    "asset/pdf/03-Le-filtrage.pdf",
-    "asset/pdf/02-Traitement-analogique.pdf",
-    "asset/pdf/01-Le-regime-sinusoidal.pdf",
-    "asset/pdf",
-    "asset/image",
-    "asset",
-    "Programming/Rules/Premature Optimization.md",
-    "Programming/Rules",
-    "Programming",
     "Untitled.canvas"
   ]
 }

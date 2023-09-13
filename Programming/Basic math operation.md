@@ -73,7 +73,7 @@ class MathOperations {
 	public double SquareRoot(double num) {         
 		return Math.Sqrt(num);     
 	}          
-	public double Exponent(double baseNum, double power) {         
+	public double Exponent(double baseNum, double power) {        
 		return Math.Pow(baseNum, power);     
 	} 
 	public int Modulus(int a, int b) { 

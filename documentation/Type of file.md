@@ -351,6 +351,11 @@ console.log(greet('John'));
 
 In the above example, the PHP code between `<?php` and `?>` tags is executed on the server-side, and the value of `$name` is dynamically inserted into the HTML output.
 
+# File divers
+
+## BMP (fichier d'image non compressé)
+https://fr.wikipedia.org/wiki/Windows_bitmap
+
 ## Conclusion
 
 Different types of files serve various purposes in web development and software projects. Understanding their roles and usage is essential for effective project management, collaboration, and maintaining a clean and organized codebase. Happy coding and organizing your projects!
