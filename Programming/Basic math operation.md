@@ -1,5 +1,3 @@
-Certainly, here's an extended version of the class that includes additional math operations like square root and exponents for various programming languages:
-
 ```cpp
 // C++ Class 
 #include <cmath>  

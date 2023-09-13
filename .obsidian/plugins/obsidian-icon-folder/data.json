@@ -1,0 +1,46 @@
+{
+  "settings": {
+    "migrated": 2,
+    "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
+    "fontSize": 16,
+    "emojiStyle": "none",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "RiCheckboxMultipleFill",
+      "RiToolsFill",
+      "FabRuler",
+      "FabLanguage",
+      "RiLockPasswordLine"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": true
+  },
+  "apps": "RiAppsFill",
+  "asset": "FabFile",
+  "cloud": "FabCloudArrowUp",
+  "cloud/what-is-cloud-computing.md": "FabCloudflare",
+  "cloud/provider": "FabPaperPlane",
+  "databases": "FabDatabase",
+  "docker": "FabDocker",
+  "error": "RiErrorWarningFill",
+  "hardware": "FabHardDrive",
+  "infra": "FabBuilding",
+  "kubernetes": "FabShieldVirus",
+  "linux": "FabLinux",
+  "macos": "RiMacbookFill",
+  "misc": "FabFolderOpen",
+  "networking": "FabNetworkWired",
+  "Programming": "FabCode",
+  "tools": "RiToolsFill",
+  "windows": "FabWindows",
+  "asset/image": "FabImage",
+  "asset/pdf": "FabFilePdf",
+  "Programming/Rules": "FabRuler"
+}
