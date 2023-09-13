@@ -1,5 +1,5 @@
 # Cert-Manager
-Cert-manager adds [certificates](misc/ssl-certs) and certificate issuers as resource types in [Kubernetes Clusters](kubernetes/kubernetes.md), and simplifies the process of obtaining, renewing and using those [certificates](misc/ssl-certs).
+Cert-manager adds [certificates](ssl-certs.md) and certificate issuers as resource types in [Kubernetes Clusters](kubernetes/kubernetes.md), and simplifies the process of obtaining, renewing and using those [certificates](ssl-certs.md).
 
 Documentation & Project Homepage: [Cert-Manager Docs](https://cert-manager.io/docs/)
 

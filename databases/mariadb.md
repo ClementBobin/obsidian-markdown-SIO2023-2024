@@ -56,7 +56,7 @@ bind-address = 0.0.0.0
 ```
 
 ## Connecting via code to the Database
-To connect to the database from code, you can use various programming languages. For example, to connect via [PHP](language/Php)
+To connect to the database from code, you can use various programming languages. For example, to connect via [PHP](Php.md)
 
 ## Create Administrative User
 1. Create a new user `newuser` for the host `localhost` with a new `password`:

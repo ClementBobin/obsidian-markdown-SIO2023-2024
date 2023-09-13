@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "e1e20e44c6b53fb2",
+        "id": "04f2de542f1149cd",
         "type": "tabs",
         "children": [
           {
-            "id": "b3e41b58caa5b1f8",
+            "id": "a7bb7db78ac00247",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "router",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,19 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
+            }
+          },
+          {
+            "id": "96206b578eb1ae5f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
             }
           }
         ]
@@ -133,57 +152,59 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "markdown-importer:Open format converter": false,
+      "random-note:Open random note": false
     }
   },
-  "active": "b3e41b58caa5b1f8",
+  "active": "a7bb7db78ac00247",
   "lastOpenFiles": [
-    "Programming/Learning to Code.md",
-    "Programming/Basic math operation.md",
-    "Programming/HTTP Status Codes.md",
-    "Programming/http-status-codes.md",
-    "misc/color-codes.md",
-    "misc/Electromagnetic Waves.md",
-    "misc/codage informatique binaire.md",
-    "cloud/provider/civo.md",
-    "cloud/what-is-cloud-computing.md",
-    "infra/Hypervisors.md",
-    "infra/VirtualBox.md",
-    "infra/VMware Workstation.md",
-    "kubernetes/helm.md",
-    "docker/docker.md",
-    "infra/proxmox.md",
-    "language/htmx.md",
-    "tools/homebrew.md",
-    "misc/énergie.md",
-    "documentation/Type of file.md",
-    "misc/Energy Storage.md",
-    "misc/Filtrage.md",
-    "misc/github-actions.md",
-    "misc/markdown.md",
-    "misc/Sinusoidal Signals.md",
-    "misc/ssl-security.md",
-    "misc/Sound Waves.md",
-    "administra",
-    "01-Le-regime-sinusoidal.pdf",
-    "asset/pdf/01-Le-regime-sinusoidal.pdf",
-    "asset/pdf/02-Traitement-analogique.pdf",
-    "images.jpg",
-    "asset/image/onde sonore célérité.jpg",
-    "networking/ordi",
-    "networking/ordi/communication/Serial Communication",
-    "networking/communication/Nouveau dossier",
+    "windows/Active Directory.md",
+    "tools/Wireshark.md",
+    "tools/Teams.md",
+    "tools/OneNote.md",
+    "tools/FileZilla.md",
+    "tools/Figma.md",
+    "networking/ordi/communication/réseau/Trame Ethernet or Ethernet Frame.md",
+    "networking/ordi/communication/réseau/Internet Synthesis.md",
+    "networking/ordi/Maitrise de Trame.md",
+    "networking/network.md",
+    "networking/Server.md",
+    "misc/IT development.md",
+    "misc/Cybersecurity.md",
+    "misc/Binary Computer Coding.md",
+    "misc/Access to resources.md",
+    "infra/OS Management.md",
+    "infra/Configuration client server.md",
+    "docker/Containerization.md",
+    "databases/Databases.md",
+    "cloud/Cloud Computing.md",
+    "administra/Pert Diagram vs. Gantt Chart.md",
+    "administra/Managing Incidents.md",
+    "administra/Integration and Acceptance Testing.md",
+    "administra/Evaluating Project + Analyzing Variances.md",
+    "administra/Brainstorming.md",
+    "administra/Analyzing Project + Organizational Methods.md",
+    "Project",
+    "Programming/language/React/Module",
+    "Programming/language/React/Framework",
+    "Programming/language/React",
+    "Programming/language",
+    "Programming/encryption",
     "networking/ordi/communication/réseau",
+    "networking/ordi/communication/Serial Communication",
     "networking/ordi/communication",
-    "networking/Nouveau dossier",
+    "networking/ordi",
+    "asset/image/trame ethernet.PNG",
+    "asset/image/onde sonore célérité.jpg",
     "asset/image/logique and binaire.jpg",
     "asset/image/example bit signe.jpg",
-    "asset/image/bit signe.jpg",
-    "asset/image/addition binaire.jpg",
-    "asset/image/trame ethernet.PNG",
     "asset/image/datagramme ip.PNG",
+    "asset/image/addition binaire.jpg",
+    "images.jpg",
+    "asset/image/bit signe.jpg",
     "asset/image/types de réseaux.png",
     "asset/image/traditional 3.png",
     "Untitled.canvas"
