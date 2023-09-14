@@ -7,12 +7,16 @@ kanban-plugin: basic
 ## to do
 
 **Complete**
-- [x] revoir diapo
 - [x] **dream bird** language
+- [x] network/network (notation CIDR)
+- [x] Network/network (gateway)
+- [x] Network/network (modern)
+- [x] network/network (adresse mac )
 
 
 ## in work
 
+- [ ] revoir diapo
 
 
 ## pause
@@ -21,6 +25,7 @@ kanban-plugin: basic
 
 ## finish
 
+- [ ] type of file .iso
 
 
 

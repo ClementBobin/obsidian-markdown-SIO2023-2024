@@ -351,7 +351,16 @@ console.log(greet('John'));
 
 In the above example, the PHP code between `<?php` and `?>` tags is executed on the server-side, and the value of `$name` is dynamically inserted into the HTML output.
 
+## .iso
+Une image ISO est une copie exacte et numérique d'un disque optique, généralement d'un CD, d'un DVD ou d'un disque Blu-ray. Le terme "ISO" est dérivé du format de fichier standard utilisé pour stocker cette copie d'un disque, appelé "ISO 9660". Ces fichiers ISO sont souvent utilisés pour distribuer des logiciels, des systèmes d'exploitation, des jeux, des films et d'autres contenus numériques.
+
 # File divers
+
+## Virtual Machine (.vm, .ova)  
+- **Purpose**: Virtual machine files, such as Virtual Machine Disk files (.vmdk) and Open Virtualization Format files (.ova), are used to package and distribute virtualized operating systems and applications. They allow for the creation of virtual machines (VMs) that run on virtualization platforms like VMware, VirtualBox, and Hyper-V.  
+- **Example (VMware .vmdk)**:   Virtual machine disk files can vary in complexity, but here's a simplified example: my-vm-disk.vmdk
+
+- **Example (VirtualBox .ova)**: Open Virtualization Format files are packaged virtual machines that include configuration and disk image files. Here's an example: my-vm.ova
 
 ## BMP (fichier d'image non compressé)
 https://fr.wikipedia.org/wiki/Windows_bitmap
