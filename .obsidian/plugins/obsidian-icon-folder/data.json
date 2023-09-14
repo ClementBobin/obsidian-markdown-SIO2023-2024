@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "RiCheckboxMultipleFill",
-      "RiToolsFill",
-      "FabRuler",
+      "FabLock",
       "FabLanguage",
-      "RiLockPasswordLine"
+      "FabChessKing",
+      "RiAdminFill",
+      "FabSchool"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -42,5 +42,11 @@
   "windows": "FabWindows",
   "asset/image": "FabImage",
   "asset/pdf": "FabFilePdf",
-  "Programming/Rules": "FabRuler"
+  "Programming/Rules": "FabRuler",
+  "A faire.md": "RiCheckboxMultipleFill",
+  "SIO Saint-benigne.md": "FabSchool",
+  "administra": "RiAdminFill",
+  "Project": "FabChessKing",
+  "Programming/language": "FabLanguage",
+  "Programming/encryption": "FabLock"
 }
