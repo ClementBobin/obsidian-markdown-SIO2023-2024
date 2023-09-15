@@ -12,6 +12,8 @@ kanban-plugin: basic
 - [x] Network/network (gateway)
 - [x] Network/network (modern)
 - [x] network/network (adresse mac )
+- [x] F12
+- [x] python
 
 
 ## in work

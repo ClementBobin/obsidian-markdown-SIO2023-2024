@@ -4,19 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e1e20e44c6b53fb2",
+        "id": "93153582ba921ebe",
         "type": "tabs",
         "children": [
           {
-            "id": "b3e41b58caa5b1f8",
+            "id": "bbb9dd5f297a02a2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "tools/git.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
+                "file": "A faire.md"
               }
             }
           }
@@ -86,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tools/git.md",
+                "file": "A faire.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tools/git.md",
+                "file": "A faire.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tools/git.md"
+                "file": "A faire.md"
               }
             }
           },
@@ -159,34 +156,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b3e41b58caa5b1f8",
+  "active": "bbb9dd5f297a02a2",
   "lastOpenFiles": [
-    "tools/vscode.md",
-    "tools/Marp for VS Code.md",
-    "SIO Saint-benigne.md",
-    "A faire.md",
-    "Untitled.md",
-    "g.md",
-    "Programming/Type of file.md",
-    "Programming/HTTP Status Codes.md",
+    "databases/Metabase.md",
     "Programming/http.md",
+    "Programming/HTTP Status Codes.md",
+    "Programming/http-status-codes.md",
+    "Programming/Deploying a Service.md",
+    "Programming/Basic math operation.md",
+    "Programming/language/React/Framework/Vite.md",
+    "Programming/language/React/React.md",
+    "Programming/Rules/Premature Optimization.md",
+    "Programming/Rules/Never Nester.md",
+    "Programming/Rules/Naming Things in Code.md",
+    "Programming/Rules/Inheritance.md",
+    "Programming/Rules/Don't Write Comments.md",
+    "Programming/Rules/Dependency Injection.md",
+    "Programming/Rules/Abstraction.md",
+    "Programming/Learning to Code.md",
+    "Programming/Managing Saves.md",
+    "Programming/Scripting.md",
+    "Programming/Type of file.md",
+    "Programming/Variable Data Storage.md",
+    "tools/YUMI.md",
     "windows/Active Directory.md",
-    "tools/Wireshark.md",
-    "tools/Teams.md",
-    "tools/OneNote.md",
-    "tools/FileZilla.md",
-    "tools/Figma.md",
-    "networking/ordi/communication/réseau/Trame Ethernet or Ethernet Frame.md",
-    "networking/ordi/communication/réseau/Internet Synthesis.md",
-    "networking/ordi/Maitrise de Trame.md",
+    "A faire.md",
     "networking/network.md",
-    "networking/Server.md",
-    "misc/IT development.md",
-    "misc/Cybersecurity.md",
-    "misc/Binary Computer Coding.md",
-    "misc/Access to resources.md",
-    "infra/OS Management.md",
-    "infra/Configuration client server.md",
+    "SIO Saint-benigne.md",
+    "Programming/encryption/Data Encryption.md",
     "Project",
     "Programming/language/React/Module",
     "Programming/language/React/Framework",
