@@ -74,6 +74,9 @@ As soon as the mobile is turned on, a dialogue is established between the termin
 ## The switch:
 > The switch is an interconnecting device. Also called a switch, it analyzes the frames arriving on its input ports and filters the data in order to route them only on the appropriate ports (we speak of switching or switched networks).
 
+## Modem
+
+>A modem (modulator-demodulator) is a device that allows digital data to be transmitted over analog communication channels. It modulates digital data into an analog signal suitable for transmission over telephone lines or cable connections. At the receiving end, it demodulates the analog signal back into digital data.
 ## The router:
 >A router is an intermediate element in a computer network providing packet routing. Its role is to transfer packets from one network interface to another, at best, according to a set of rules.
 
@@ -96,6 +99,9 @@ If PC1 wants to send a message to PC2 it needs a network address (IP address)
 
 > The IP address works according to the same principle as the postal address, it makes it possible to locate the machine on a network of computers, which can be composed of subnets. The IP address of the machine contains all this information.
 
+## Gateway
+
+A gateway serves as an entry and exit point between two different networks, allowing data traffic to flow between them. In home or office networks, a router often functions as the gateway. It manages the connection between the local network (LAN) and the external network (usually the internet). The router directs data between devices on the local network and to the outside world.
 ## IP / MAC address:
 
 The IP address (like Internet Protocol) is a "logical" address assigned to a machine manually by the network administrator or automatically by a Dynamic Host Configuration Protocol (DHCP) server. This address is used to communicate within a network. It is editable.
@@ -104,8 +110,17 @@ Each network interface (network card, Wi-Fi interface, Bluetooth, etc.) also has
 A MAC address is a 48-bit number represented in hexadecimal by 6 bytes.
 MAC address example: `F4-6D-04-AF-64-62'
 
+The first half of the MAC address (24 bits) typically represents the manufacturer (OUI - Organizationally Unique Identifier), and the second half (24 bits) is assigned uniquely by the manufacturer to each network interface.
+
 On Windows to get the physical (MAC) and logical (IP) addresses of the network interfaces of your PC you can type the command: `ipconfig/all'
 
+### Uniqueness and Purpose
+
+MAC addresses are globally unique. No two NICs should have the same MAC address. This uniqueness is crucial in local networks to ensure that data is sent to the correct device. When a device wants to communicate with another on the local network, it uses the recipient's MAC address to direct the data precisely.
+
+MAC addresses operate at the data link layer (Layer 2) of the OSI model and are essential for LAN communication.
+
+### IP Protocol
 On Windows, it is the ARP protocol (Address Resolution Protocol) that establishes the correspondence between physical address and IP address.
 To display the ARP table entries enter: 'arp –a'.
 
@@ -174,6 +189,19 @@ To summarize:
 
 ![[Class ip.png]]
 
+# CIDR Notation
+
+## CIDR Overview
+
+Classless Inter-Domain Routing (CIDR) is a method used to allocate IP addresses and route IP packets efficiently. It departs from the traditional class-based IP addressing system and allows for more flexible allocation.
+
+## CIDR Notation Format
+
+CIDR notation represents an IP address and its associated routing prefix. The format is: `IP address/network prefix length`. For example, `192.168.1.0/24` indicates that the IP address range from 192.168.1.0 to 192.168.1.255 is part of the same network, with a subnet mask of 255.255.255.0 (24 bits).
+
+## Purpose and Benefits
+
+CIDR allows network administrators to allocate IP addresses more flexibly, optimizing address distribution and routing. It provides finer control over address allocation than the traditional class-based system, which leads to more efficient use of IP addresses and improved internet routing.
 # Network architectures
 ## Client-server architecture:
 >In this environment, "client" computers contact a "server" computer to use an application service, a database, a connection to another network, etc... The «server» machine is in powerful general.
