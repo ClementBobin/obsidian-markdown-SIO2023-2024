@@ -8,6 +8,7 @@ kanban-plugin: basic
 
 **Complete**
 - [x] **dream bird** language
+- [x] bun (node.js)
 
 
 ## in work
