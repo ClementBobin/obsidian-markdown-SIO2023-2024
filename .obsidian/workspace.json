@@ -167,12 +167,21 @@
       "command-palette:Open command palette": false
     }
   },
+<<<<<<< Updated upstream
   "active": "b150e29001a9ccc7",
   "lastOpenFiles": [
     "databases/Metabase.md",
     "Programming/http.md",
     "Programming/HTTP Status Codes.md",
     "Programming/http-status-codes.md",
+=======
+  "active": "f2da540d052356b2",
+  "lastOpenFiles": [
+    "Programming/http-status-codes.md",
+    "Programming/HTTP Status Codes.md",
+    "databases/Metabase.md",
+    "Programming/http.md",
+>>>>>>> Stashed changes
     "Programming/Deploying a Service.md",
     "Programming/Basic math operation.md",
     "Programming/language/React/Framework/Vite.md",
