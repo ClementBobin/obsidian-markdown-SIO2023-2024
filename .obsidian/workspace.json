@@ -16,8 +16,19 @@
                 "file": "A faire.md"
               }
             }
+          },
+          {
+            "id": "b150e29001a9ccc7",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.13"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,7 +167,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bbb9dd5f297a02a2",
+  "active": "b150e29001a9ccc7",
   "lastOpenFiles": [
     "databases/Metabase.md",
     "Programming/http.md",
