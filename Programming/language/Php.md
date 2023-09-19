@@ -173,7 +173,66 @@ if ($result->num_rows > 0) {
 	echo "0 results"; 
 }
 ```
+### Basic SQL Database Operations
 
+#### Add Data
+
+```php
+$sql = "INSERT INTO table_name (column1, column2, column3) VALUES ('value1', 'value2', 'value3')"; 
+if ($conn->query($sql) === TRUE) {     
+	echo "New record created successfully"; 
+} else {     
+	echo "Error: " . $sql . "<br>" . $conn->error; 
+}
+```
+
+#### Change Data
+
+```php
+$sql = "UPDATE table_name SET column1='new_value1' WHERE condition"; 
+if ($conn->query($sql) === TRUE) {     
+	echo "Record updated successfully"; 
+} else {     
+	echo "Error updating record: " . $conn->error; 
+}
+```
+
+#### Check Data
+
+```php
+$sql = "SELECT * FROM table_name WHERE condition"; 
+$result = $conn->query($sql);  
+if ($result->num_rows > 0) {     
+	// Output data 
+} else {     
+	echo "0 results"; 
+}
+```
+
+#### Delete Data
+
+```PHP
+$sql = "DELETE FROM table_name WHERE condition"; 
+if ($conn->query($sql) === TRUE) {     
+	echo "Record deleted successfully"; 
+} else {     
+	echo "Error deleting record: " . $conn->error; 
+}
+```
+
+#### Get Data
+
+```php
+$sql = "SELECT * FROM table_name"; 
+$result = $conn->query($sql);  
+if ($result->num_rows > 0) {     
+	while($row = $result->fetch_assoc()) {         
+		// Output data     
+	} 
+} else {     
+	echo "0 results"; 
+}
+```
 ## Conclusion
 
 This cheat-sheet covers the basic usage and syntax of PHP for web development. PHP is a powerful language that allows you to create dynamic and interactive web applications. As you become more comfortable with PHP, you can explore its extensive [documentation](https://www.php.net/docs.php) for more advanced features and functionalities. Happy coding with PHP!
