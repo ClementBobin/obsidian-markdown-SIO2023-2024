@@ -9,12 +9,15 @@ kanban-plugin: basic
 **Complete**
 - [x] **dream bird** language
 - [x] bun (node.js)
+- [x] système gestion fichiers
+- [x] cmd linux
+- [x] tracepath asymm
+- [x] cour b1
 
 
 ## in work
 
 - [ ] revoir diapo
-- [ ] python
 
 
 ## pause
@@ -29,9 +32,14 @@ kanban-plugin: basic
 - [ ] Network/network (gateway)
 - [ ] network/network (notation CIDR)
 - [ ] F12
+- [ ] python
 
 
+***
 
+## Archive
+
+- [x] b1-at cour 21/09
 
 %% kanban:settings
 ```
