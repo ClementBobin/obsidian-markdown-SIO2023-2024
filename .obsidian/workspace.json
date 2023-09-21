@@ -1,29 +1,32 @@
 {
   "main": {
-    "id": "72885975a0d0b1e0",
+    "id": "f7d770a7253f8a30",
     "type": "split",
     "children": [
       {
-        "id": "93153582ba921ebe",
+        "id": "64c69cd3741e7590",
         "type": "tabs",
         "children": [
           {
-            "id": "bbb9dd5f297a02a2",
+            "id": "94afc36f4d2d3b80",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming/language/javascript/Javascript.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7486e221f3b1780c",
             "type": "leaf",
             "state": {
               "type": "kanban",
               "state": {
                 "file": "A faire.md"
-              }
-            }
-          },
-          {
-            "id": "b150e29001a9ccc7",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.13"
               }
             }
           }
@@ -34,15 +37,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ab438b6c8d3423df",
+    "id": "773ef76df5900b5a",
     "type": "split",
     "children": [
       {
-        "id": "a726ae053a5951e8",
+        "id": "2d15225f9aac8958",
         "type": "tabs",
         "children": [
           {
-            "id": "f2da540d052356b2",
+            "id": "6f6cd4bb42e103dd",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -52,12 +55,12 @@
             }
           },
           {
-            "id": "0e8d546016231588",
+            "id": "bdaa410e8c882754",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "file:mark",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -67,7 +70,7 @@
             }
           },
           {
-            "id": "8e97b38d47bc5dba",
+            "id": "20fe1bd697f8a5ea",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,27 +81,27 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "b97fe4986b593259",
+    "id": "b37262165061798d",
     "type": "split",
     "children": [
       {
-        "id": "5d5b9fce475b1a77",
+        "id": "34a1c21250fe4b10",
         "type": "tabs",
         "children": [
           {
-            "id": "35d73b81cb24a2ab",
+            "id": "ca3ca81a5616a960",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
                 "file": "A faire.md",
-                "collapseAll": true,
-                "extraContext": true,
+                "collapseAll": false,
+                "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": true,
+                "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
@@ -106,7 +109,7 @@
             }
           },
           {
-            "id": "f132b4aba5f7b5d8",
+            "id": "27e9891ba9c0ebde",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -118,7 +121,7 @@
             }
           },
           {
-            "id": "12d714e6a4414c6c",
+            "id": "36d633b2b408edf5",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -129,22 +132,22 @@
             }
           },
           {
-            "id": "7862aeb45946ca4f",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "A faire.md"
-              }
-            }
-          },
-          {
-            "id": "155635b8fe402dd1",
+            "id": "b4a3c64045a49c3e",
             "type": "leaf",
             "state": {
               "type": "all-properties",
               "state": {
                 "sortOrder": "frequency"
+              }
+            }
+          },
+          {
+            "id": "887d0717564f69b3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "A faire.md"
               }
             }
           }
@@ -157,73 +160,45 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "markdown-importer:Open format converter": false,
-      "random-note:Open random note": false,
-      "audio-recorder:Start/stop recording": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "random-note:Open random note": false,
+      "audio-recorder:Start/stop recording": false
     }
   },
-<<<<<<< Updated upstream
-  "active": "b150e29001a9ccc7",
+  "active": "7486e221f3b1780c",
   "lastOpenFiles": [
-    "databases/Metabase.md",
-    "Programming/http.md",
-    "Programming/HTTP Status Codes.md",
-    "Programming/http-status-codes.md",
-=======
-  "active": "f2da540d052356b2",
-  "lastOpenFiles": [
-    "Programming/http-status-codes.md",
-    "Programming/HTTP Status Codes.md",
-    "databases/Metabase.md",
-    "Programming/http.md",
->>>>>>> Stashed changes
-    "Programming/Deploying a Service.md",
-    "Programming/Basic math operation.md",
-    "Programming/language/React/Framework/Vite.md",
-    "Programming/language/React/React.md",
-    "Programming/Rules/Premature Optimization.md",
-    "Programming/Rules/Never Nester.md",
-    "Programming/Rules/Naming Things in Code.md",
-    "Programming/Rules/Inheritance.md",
-    "Programming/Rules/Don't Write Comments.md",
-    "Programming/Rules/Dependency Injection.md",
-    "Programming/Rules/Abstraction.md",
-    "Programming/Learning to Code.md",
-    "Programming/Managing Saves.md",
-    "Programming/Scripting.md",
-    "Programming/Type of file.md",
-    "Programming/Variable Data Storage.md",
-    "tools/YUMI.md",
-    "windows/Active Directory.md",
+    "Programming/language/javascript/Array.md",
+    "Programming/language/javascript/Javascript.md",
+    "misc/markdown.md",
+    "Programming/language/javascript",
     "A faire.md",
+    "asset/Recording 20230921142442.webm",
+    "Best inspiration.md",
+    "README.md",
     "networking/network.md",
-    "SIO Saint-benigne.md",
-    "Programming/encryption/Data Encryption.md",
-    "Project",
-    "Programming/language/React/Module",
-    "Programming/language/React/Framework",
-    "Programming/language/React",
-    "Programming/language",
-    "Programming/encryption",
-    "language/React/Module",
-    "language/React/Framework",
-    "language/React",
-    "language",
-    "images.jpg",
-    "asset/image/onde sonore célérité.jpg",
-    "asset/image/logique and binaire.jpg",
-    "asset/image/example bit signe.jpg",
-    "asset/image/bit signe.jpg",
-    "asset/image/addition binaire.jpg",
-    "asset/image/trame ethernet.PNG",
-    "asset/image/datagramme ip.PNG",
-    "asset/image/types de réseaux.png",
-    "asset/image/traditional 3.png",
-    "Untitled.canvas"
+    "databases/Databases.md",
+    "networking/ordi/communication/réseau/Trame Ethernet or Ethernet Frame.md",
+    "networking/ordi/communication/réseau/Synthesis The Web.md",
+    "networking/ordi/communication/réseau/Internet Synthesis.md",
+    "cloud/Cloud Computing.md",
+    "Programming/TTD.md",
+    "Programming/language/Css.md",
+    "Programming/language/HTML.md",
+    "Programming/language/htmx.md",
+    "Programming/language/Javascript.md",
+    "misc/IT development.md",
+    "networking/ordi/communication/Serial Communication/Protocole.md",
+    "networking/ordi/communication/Serial Communication/BUS CAN.md",
+    "networking/ordi/communication/Serial Communication/Asynchronous and Synchronous Transmission.md",
+    "networking/ordi/communication/réseau/Synthèse Internet.md",
+    "networking/ordi/communication/réseau/Trame Ethernet.md",
+    "networking/ordi/Maitrise de Trame.md",
+    "cloud/what-is-cloud-computing.md",
+    "Programming/language/Php.md"
   ]
 }

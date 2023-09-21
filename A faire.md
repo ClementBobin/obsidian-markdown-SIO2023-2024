@@ -18,6 +18,7 @@ kanban-plugin: basic
 ## in work
 
 - [ ] revoir diapo
+- [ ] codewars translation
 
 
 ## pause
