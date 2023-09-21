@@ -21,17 +21,46 @@
             }
           },
           {
+            "id": "faa938a9524b6b79",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming/language/javascript/Array.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "7486e221f3b1780c",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "A faire.md"
+                "file": "Programming/language/javascript/string.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "14b6f70ae5397998",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming/language/javascript/modulus.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -97,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "A faire.md",
+                "file": "Programming/language/javascript/modulus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "A faire.md",
+                "file": "Programming/language/javascript/modulus.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "A faire.md"
+                "file": "Programming/language/javascript/modulus.md"
               }
             }
           }
@@ -170,13 +199,15 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "7486e221f3b1780c",
+  "active": "14b6f70ae5397998",
   "lastOpenFiles": [
+    "Programming/language/javascript/string.md",
+    "Programming/language/javascript/modulus.md",
+    "A faire.md",
     "Programming/language/javascript/Array.md",
     "Programming/language/javascript/Javascript.md",
     "misc/markdown.md",
     "Programming/language/javascript",
-    "A faire.md",
     "asset/Recording 20230921142442.webm",
     "Best inspiration.md",
     "README.md",
@@ -197,8 +228,6 @@
     "networking/ordi/communication/Serial Communication/Asynchronous and Synchronous Transmission.md",
     "networking/ordi/communication/réseau/Synthèse Internet.md",
     "networking/ordi/communication/réseau/Trame Ethernet.md",
-    "networking/ordi/Maitrise de Trame.md",
-    "cloud/what-is-cloud-computing.md",
-    "Programming/language/Php.md"
+    "networking/ordi/Maitrise de Trame.md"
   ]
 }
