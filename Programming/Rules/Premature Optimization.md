@@ -42,4 +42,4 @@ Consider premature optimization in a sorting algorithm. If a developer spends si
 Premature optimization can lead to inefficient use of resources and complicate the development process. Developers should prioritize functionality, design for clarity, and optimize based on measured performance bottlenecks. By avoiding premature optimization, you can create code that is more maintainable, efficient, and aligned with the actual needs of the application.
 
 # Out source:
-[Premature Optimization](https://www.youtube.com/watch?v=tKbV6BpH-C8)
+![Premature Optimization](https://www.youtube.com/watch?v=tKbV6BpH-C8)

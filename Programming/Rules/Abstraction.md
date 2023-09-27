@@ -124,4 +124,4 @@ This approach is simpler, more intuitive, and easier to maintain. It avoids unne
 The key takeaway is that while abstraction is a valuable tool, it should be used judiciously and only when it truly enhances code readability, maintainability, and flexibility. Excessive abstraction can lead to unnecessary complexity and make the code worse instead of better.
 
 # Out Source:
-[Abstraction Can Make Your Code Worse](https://www.youtube.com/watch?v=rQlMtztiAoA)
+![Abstraction Can Make Your Code Worse](https://www.youtube.com/watch?v=rQlMtztiAoA)

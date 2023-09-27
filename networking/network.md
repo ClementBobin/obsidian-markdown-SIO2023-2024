@@ -24,7 +24,7 @@ A MAN is made up of switches or routers interconnected by high-speed links (usua
 WAN operate through routers that allow you to "choose" the most appropriate route to reach a network node.. 
 
 The most known WAN is Internet.. 
-![[asset/image/types de réseaux.png]]
+![](asset/image/types%20de%20réseaux.png)
 
 # Internet access methods. 
 
@@ -66,13 +66,13 @@ As soon as the mobile is turned on, a dialogue is established between the termin
 
 # Hardware within a LAN
 
-![[Matériels LAN.png]]
+![](asset/image/Matériels%20LAN.png)
 
 ## The HUB:
 > A HUB (also called a hub) is a hardware element that concentrates network traffic from multiple hosts and regenerates the signal. Its sole purpose is to retrieve binary data arriving on a port and broadcast it on all ports.
 
 ## The switch:
-> The switch is an interconnecting device. Also called a switch, it analyzes the frames arriving on its input ports and filters the data in order to route them only on the appropriate ports (we speak of switching or switched networks).
+> The switch is an interconnecting device. Also called a switch, it analyses the frames arriving on its input ports and filters the data in order to route them only on the appropriate ports (we speak of switching or switched networks).
 
 ## Modem
 
@@ -93,7 +93,7 @@ The regions themselves are composed of sub-networks: `cities`.
 The cities themselves are composed of sub-networks: `the streets`.
 The streets form a network of houses identified by an ==N°==.
 
-![[Adressage.png]]
+![](asset/image/Adressage.png)
 
 If PC1 wants to send a message to PC2 it needs a network address (IP address)
 
@@ -140,7 +140,7 @@ private #IP addresses to communicate with each other and with the #NAT server.
 Version 4 is currently the most used: it is generally represented in decimal notation with four numbers between 0 and 255, separated by points, which gives for example: 172.16.254.1  
 (the address shown in the image below).  
   
-![[example ip.png]]  
+![](asset/image/example%20ip.png)  
   
 The number of public #IP Version 4 addresses officially reached saturation on February 3, 2011. The transition from IPv4 to IPv6 is underway.  
   
@@ -151,17 +151,17 @@ Due to the migration to #IPv6, this notion of class is now obsolete.
   
 The #IP address of a device contains both a network identifier (NetID) and a device identifier (HostID)  
   
-![[separation ip.png]]  
+![](asset/image/separation%20ip.png)  
   
 Depending on the number of devices that can be connected to a network, the #IP addresses belong to class A, B or C. The format of a #IP address according to its class is as follows:  
   
-![[class ip.png]]  
+![](asset/image/class%20ip.png)  
   
 The network’s #IP address is a #IP address with all bits from the “Host ID” part to 0. It is therefore a reserved address and not attributable to any equipment.  
   
 Another combination is reserved. This is the one where all the bits of the "Host ID" part are at 1. This address is the broadcast address ( #broadcast) and is used to designate all the hosts of the network.  
   
-![[global rule adresse.png]]  
+![](asset/image/global%20rule%20adresse.png)  
 `class B`  
   
 | network id | host id | network address | broadcast address |  
@@ -187,7 +187,7 @@ Network address = 10.0.0.0
 
 To summarize:
 
-![[Class ip.png]]
+![](asset/image/Class%20ip.png)
 
 # CIDR Notation
 
@@ -211,7 +211,7 @@ CIDR allows network administrators to allocate IP addresses more flexibly, optim
 - The client makes a request to the server through its IP address and port, which designates a particular service of the server.
 - The server receives the request and responds using the address of the client machine and its port.
 
-![[architecture client serveur schema.png]]
+![](asset/image/architecture%20client%20serveur%20schema.png)
 
 #### Benefits:  
   
@@ -220,7 +220,7 @@ CIDR allows network administrators to allocate IP addresses more flexibly, optim
 - *Server-level administration*: since clients are of little importance in this model, they need less administration.  
 - *A scalable network*: thanks to this architecture it is possible to delete or add clients without disrupting the network operation and without major changes.  
   
-![[architecture client server.png]]  
+![](asset/image/architecture%20client%20server.png)  
 #### Disadvantages:  
   
 - High cost due to server technicality.  
@@ -235,7 +235,7 @@ CIDR allows network administrators to allocate IP addresses more flexibly, optim
 - Reduced cost due to lack of server.  
 - Extreme simplicity.  
   
-![[architecture égal à égal.png]]
+![](asset/image/architecture%20égal%20à%20égal.png)
 #### Disadvantages:  
   
 - Administration more difficult due to lack of centralisation.  
@@ -254,29 +254,29 @@ A computer network consists of computers connected to each other through communi
 >In a bus topology all computers are connected to the same transmission line via cable. The word «bus» refers to the physical line that connects the machines of the network.
 
 This topology is extremely vulnerable since if one of the connections is faulty, the entire network is affected.
-![[topologie bus.png]]
+![](topologie%20bus.png)
 
 ## Star topology:
 >In a star topology, the network computers are connected to a central hardware system: either a hub (hub) or a switch (switch).
 
 If a link fails, the network can still work.
 We meet this kind of topology in high schools for example.
-![[topologie en étoile.png]]
+![](asset/image/topologie%20en%20étoile.png)
 ## Mesh topology:
 >A mesh topology corresponds to several point-to-point links (e.g.
 such as the Internet). Information may travel the network on various routes.
 
-![[topologie mailée.png]]
+![](asset/image/topologie%20mailée.png)
 # Communication
 Communication between two computers can be compared to the sending of postal mail between a sender and a recipient.
 
 ### IP Address
 
 1. In order for Computer A to send a message to Computer B, it must know its address. Both computers have a unique address on the network that identifies them. This is their IP address. 
-![[electronic 1.png]]
+![](asset/image/electronic%201.png)
 
 2. By analogy, when a company A wants to send a letter to another company B it must know its mailing address. 
-![[traditional 1.png]]
+![](asset/image/traditional%201.png)
 
 ### Notion of port
 
@@ -285,14 +285,14 @@ Communication between two computers can be compared to the sending of postal mai
 - an email software
 - Note review software;
 - …. 
-![[electronic 2.png]]
+![](asset/image/electronic%202.png)
 
 2. In company B the mail is addressed to a particular department:
 - Accounting department
 - customer service
 - management
 - ….
-![[traditional 2.png]]
+![](asset/image/traditional%202.png)
 
 Each software has a unique number called port. This number is transmitted along with the IP address. The received data is then directed to the “right” recipient. A computer has 65,535 ports. The first 1023 are reserved (http:80, ftp: 21, etc.)We write on the letter the address of the company
 but also the recipient service.
@@ -302,12 +302,12 @@ but also the recipient service.
 - Sending a message with OUTLOOK and reading it with GMAIL because the encoding of the message is recognized by both software.  
 - Sending data from one computer to another  
 - …  
-![[electronic 3.png]]  
+![](asset/image/electronic%203.png)  
   
 2. Mail sent by the company (A) arrives at the company (B) by:  
 - Envelope size meets standard  
 - The elements of the address comply with the rules set by the mail forwarding companies (street number, postal code, etc.)  
-![[traditional 3.png]]  
+![](asset/image/traditional%203.png)  
   
 We also respect COMMUNICATION PROTOCOLS.  
   
@@ -328,14 +328,14 @@ Below during a broadcast
 >The Transmission Control Protocol (TCP) transport protocol takes care of to break down the information into segments. The Internet Protocol (IP) network protocol is responsible for identifying packets with IP addresses.
 
 
-![[modèle TCP ip.png]]
-![[modele tcp ip example.png]]
-![[modele tcp ip example 2.png]]
+![](asset/image/modèle%20TCP%20ip.png)
+![](asset/image/modele%20tcp%20ip%20example.png)
+![](asset/image/modele%20tcp%20ip%20example%202.png)
 
 # Data encapsulation
 >On emission, the information of a layer is «inserted» in the neighboring layer, as «Data». This phenomenon is repeated layer by layer as shown in the diagram opposite. This process is called: ENCAPSULATION
 
-![[encapsulation.png]]
+![](asset/image/encapsulation.png)
 
 # The OSI model
 There are other models describing the transmission of information. Among these, there is one, competitor of the TCP/IP model and more detailed: it is the OSI model.
@@ -345,7 +345,7 @@ The Open Systems Interconnect (OSI) model is broken down into 7 layers.
 
 'How is the communication between machines? Analogie Homme / Machine'
 
-![[modèle iso.png]]
+![](asset/image/modèle%20iso.png)
 
 # Communication protocols
 ### Physical layer:
@@ -475,3 +475,61 @@ The best known HTTP clients are web browsers that allow a user to access a serve
 
 ### FTP:
 >File Transfer Protocol (FTP) is a communication protocol for file sharing. It allows you to copy files from one computer to another computer on the network, or to delete or modify files on that computer.
+
+## Address Resolution Protocol (ARP)
+
+The Address Resolution Protocol (ARP) is a fundamental protocol used in computer networking. Its primary purpose is to map an IP address (Layer 3) to a MAC address (Layer 2) in a local network. This markdown explains ARP, how it works, and its significance in networking.
+
+### Overview
+
+- **Acronym**: ARP stands for Address Resolution Protocol.
+    
+- **Layer**: ARP operates at the Link Layer (Layer 2) of the OSI model.
+    
+- **Objective**: ARP is used to map an IP address (32-bit) to a MAC address (48-bit).
+    
+
+### How ARP Works
+
+1. **Address Mapping Request**: When a device in a local network wants to communicate with another device, it first checks its ARP cache (a table storing IP-MAC mappings). If the mapping is not found, it sends an ARP request packet containing the target IP address to the broadcast address.
+    
+2. **ARP Request Packet**:
+    
+    - **Sender MAC**: MAC address of the requester.
+        
+    - **Sender IP**: IP address of the requester.
+        
+    - **Target MAC**: Set to all zeros (unknown).
+        
+    - **Target IP**: IP address being queried.
+        
+3. **ARP Response**: The device with the corresponding IP address responds with an ARP reply packet containing its MAC address.
+    
+4. **Updating ARP Cache**: The requester updates its ARP cache with the received IP-MAC mapping for future use.
+    
+
+### ARP Cache Poisoning (ARP Spoofing)
+
+ARP cache poisoning, also known as ARP spoofing, is a cyberattack where a malicious actor associates their MAC address with the IP address of another device in the network. This can lead to various security breaches, including interception of data.
+
+### ARP Table (ARP Cache)
+
+The ARP table or cache is a local table maintained by each device, storing recently resolved IP-MAC mappings. Entries in the table expire after a certain time.
+
+### ARP Commands
+
+- **`arp`**: Command to display and modify the ARP cache on a device.
+    
+    - **`arp -a`**: Displays the ARP table (on Windows).
+        
+    - **`arp -d <ip_address>`**: Deletes an entry from the ARP table (on Windows).
+        
+
+### Significance of ARP
+
+- **Efficient Communication**: ARP ensures devices can efficiently communicate with each other within a local network by resolving IP addresses to MAC addresses.
+    
+- **Local Network Operation**: ARP operates within a local network and is crucial for devices to communicate over Ethernet or similar link layer technologies.
+    
+
+Understanding ARP is vital for network administrators and anyone involved in network troubleshooting and security, as it forms a fundamental part of the networking infrastructure.

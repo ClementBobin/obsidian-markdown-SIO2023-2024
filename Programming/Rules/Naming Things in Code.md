@@ -123,4 +123,4 @@ let isUserAuthenticated = false;
 Well-chosen names play a crucial role in the readability, maintainability, and communication of your codebase. By following these guidelines and principles, you can create code that is self-explanatory, reduces cognitive load, and fosters effective collaboration among developers. Remember that clear, meaningful, and contextually relevant names are a key factor in writing high-quality code.
 
 # Out Source:
-[Naming Things in Code](https://youtu.be/-J3wNP6u5YU)
+![Naming Things in Code](https://youtu.be/-J3wNP6u5YU)

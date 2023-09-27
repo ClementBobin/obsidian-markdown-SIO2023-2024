@@ -9,20 +9,17 @@ kanban-plugin: basic
 **Complete**
 - [x] **dream bird** language
 - [x] bun (node.js)
-- [x] système gestion fichiers
-- [x] cmd linux
-- [x] tracepath asymm
-- [x] cour b1
 
 
 ## in work
 
 - [ ] revoir diapo
-- [ ] codewars translation
 
 
 ## pause
 
+- [ ] cmd linux
+- [ ] codewars translation
 
 
 ## finish
@@ -34,6 +31,9 @@ kanban-plugin: basic
 - [ ] network/network (notation CIDR)
 - [ ] F12
 - [ ] python
+- [ ] système gestion fichiers
+- [ ] tracepath asymm
+- [ ] cour b1
 
 
 ***

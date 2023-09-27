@@ -77,4 +77,4 @@ for (let i = 0; i < arr.length; i++) {
 While comments can be valuable for explaining complex concepts or non-obvious behavior, the principle of "Don't Write Comments" encourages developers to prioritize writing clean, self-explanatory code. Focus on code readability, meaningful variable names, and proper structuring to make comments unnecessary or minimal. When used thoughtfully, comments can enhance understanding and maintenance without cluttering the codebase.
 
 # Out Source
-[Don't Write Comments](https://www.youtube.com/watch?v=Bf7vDBBOBUA)
+![Don't Write Comments](https://www.youtube.com/watch?v=Bf7vDBBOBUA)

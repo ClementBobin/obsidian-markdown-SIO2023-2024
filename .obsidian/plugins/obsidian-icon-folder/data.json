@@ -25,7 +25,6 @@
   "apps": "RiAppsFill",
   "asset": "FabFile",
   "cloud": "FabCloudArrowUp",
-  "cloud/what-is-cloud-computing.md": "FabCloudflare",
   "cloud/provider": "FabPaperPlane",
   "databases": "FabDatabase",
   "docker": "FabDocker",

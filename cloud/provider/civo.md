@@ -21,10 +21,11 @@ civo instance create --hostname=<your-hostname> --sshkey=<your-ssh-key-name> --i
 ```
 
 **Parameters:**
+
 PARAMETER | LONG VERSION | DESCRIPTION
----|---|---
-`-t` | `--diskimage` | the instance's disk image (from 'civo diskimage ls' command)
-`-l` | `--firewall` | the instance's firewall you can use the Name or the ID
+| --- | --- | --- |
+| `-t` | `--diskimage` | the instance's disk image (from 'civo diskimage ls' command)|
+| `-l` | `--firewall` | the instance's firewall you can use the Name or the ID |
 `-l` | `--firewall` | the instance's firewall you can use the Name or the ID
 `-s` | `--hostname` | the instance's hostname
 `-u` | `--initialuser` | the instance's initial user

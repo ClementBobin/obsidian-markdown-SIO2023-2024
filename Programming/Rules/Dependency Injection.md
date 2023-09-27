@@ -67,4 +67,4 @@ class UserController {
 Dependency Injection is a powerful pattern that enhances the flexibility, maintainability, and testability of your software. By following the principles of IoC and modularity, it leads to cleaner, more organized, and more robust codebases. While it may require an initial adjustment, the benefits it offers are substantial, especially as applications grow in complexity.
 
 ## Out Source:
-[Dependency Injection, The Best Pattern](https://www.youtube.com/watch?v=J1f5b4vcxCQ&t=4s)
+![Dependency Injection, The Best Pattern](https://www.youtube.com/watch?v=J1f5b4vcxCQ&t=4s)

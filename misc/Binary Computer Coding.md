@@ -8,7 +8,7 @@ Binary coding involves performing arithmetic operations on binary numbers, just 
     - 0 + 1 = 1
     - 1 + 0 = 1
     - 1 + 1 = 0 (carry 1)
-    ![[addition binaire.jpg]]
+    ![](asset/image/addition%20binaire.jpg)
 1. **Binary Subtraction:**
     
     - 0 - 0 = 0
@@ -32,7 +32,7 @@ Logical operations manipulate individual bits in binary numbers:
     - 0 AND 1 = 0
     - 1 AND 0 = 0
     - 1 AND 1 = 1
-    ![[logique and binaire.jpg]]
+    ![](asset/image/logique%20and%20binaire.jpg)
 1. **OR (Logical OR):**
     
     - 0 OR 0 = 0
@@ -75,7 +75,7 @@ For example:
 
 - Positive 3: 00000011
 - Negative -3 (8-bit two's complement): 11111101
-![[example bit signe.jpg]]
+![](asset/image/example%20bit%20signe.jpg)
 Keep in mind that these are simplified explanations of binary operations. In real computer systems, there are more complexities and considerations, such as overflow and carry.
 
 Remember that binary coding is fundamental to computer systems and underlies all digital operations and data storage.

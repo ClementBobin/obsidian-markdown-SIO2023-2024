@@ -6,7 +6,7 @@ A **database** is a structured collection of data organized in a way that allows
 Databases store data, which can include text, numbers, dates, images, and more. Data is organized into tables, documents, or key-value pairs, depending on the database type.
 
 ### 2. **DBMS (Database Management System)**: 
-A DBMS is software that manages databases. It provides tools for creating, modifying, querying, and securing the database. Common DBMS examples include MySQL, PostgreSQL, Oracle Database, and MongoDB.
+A DBMS is software that manages databases. It provides tools for creating, modifying, querying, and securing the database. Common DBMS examples include MySQL, [PostgreSQL](databases/postgres), Oracle Database, and [MongoDB](databases/MongoDB).
 
 ### 3. **SQL (Structured Query Language)**: 
 SQL is a language used to interact with relational databases. It allows users to perform operations like querying data, inserting records, updating data, and defining database structure.
@@ -18,13 +18,13 @@ Databases are categorized into various types based on their structure, data mode
 ### 1. **Relational Databases (RDBMS)**
 
 - **Description**: Relational databases are based on the relational model and use tables to store data. They are known for their structured and organized format.
-- **Examples**: MySQL, PostgreSQL, Oracle Database, SQL Server.
+- **Examples**: MySQL, [PostgreSQL](databases/postgres), Oracle Database, SQL Server.
 - **Use Cases**: Ideal for applications requiring structured data with predefined schemas, such as e-commerce websites and financial systems.
 
 ### 2. **NoSQL Databases**
 
 - **Description**: NoSQL databases are designed for flexibility and can handle unstructured, semi-structured, or structured data. They offer various data models, including document-based, key-value, column-family, and graph databases.
-- **Examples**: MongoDB (document-based), Redis (key-value), Cassandra (column-family), Neo4j (graph).
+- **Examples**: [MongoDB](databases/MongoDB) (document-based), Redis (key-value), Cassandra (column-family), Neo4j (graph).
 - **Use Cases**: Widely used in modern web applications, IoT, real-time analytics, and scenarios with evolving data structures.
 
 ### 3. **NewSQL Databases**
@@ -42,7 +42,7 @@ Databases are categorized into various types based on their structure, data mode
 ### 5. **Document Stores**
 
 - **Description**: Document stores are NoSQL databases that store data in semi-structured JSON or BSON documents. Each document can have a different structure, providing flexibility.
-- **Examples**: MongoDB, CouchDB.
+- **Examples**: [MongoDB](databases/MongoDB), CouchDB.
 - **Use Cases**: Content management systems, catalogs, and applications where data schemas evolve over time.
 
 ### 6. **Column-Family Stores**
@@ -81,7 +81,7 @@ Databases are essential for various reasons:
     
 5. **Security**: Databases offer security features to control access and protect sensitive information.
     
-6. **Data Analysis**: Databases are crucial for business intelligence and data analysis, enabling informed decision-making.
+6. **[Data Analysis](databases/Metabase)**: Databases are crucial for business intelligence and data analysis, enabling informed decision-making.
     
 7. **Application Support**: Nearly all software applications, from websites to mobile apps, rely on databases to store and retrieve data.
     

@@ -8,7 +8,7 @@ Containerization is a lightweight form of virtualization that allows you to pack
 
 ### 2. **Docker**
 
-- [[docker]] is one of the most popular containerization platforms. It provides tools and a runtime environment for creating, deploying, and managing containers.
+- [docker](docker/docker) is one of the most popular containerization platforms. It provides tools and a runtime environment for creating, deploying, and managing containers.
 
 ### 3. **Container Image**
 

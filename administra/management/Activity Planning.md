@@ -57,7 +57,7 @@ Several tools can assist you in activity planning:
     
 - **Calendar Apps**: Digital calendars allow you to schedule tasks, set reminders, and sync across devices.
     
-- **Project Management Software**: Tools like Trello, Asana, or Jira are helpful for managing complex projects with multiple tasks and team collaboration.
+- **Project Management Software**: Tools like Trello, Asana, or Jira are helpful for managing complex projects with multiple tasks and team collaboration. Or use a [time management tools ](administra/management/Pert%20Diagram%20vs.%20Gantt%20Chart)
     
 - **Time Management Apps**: Apps like Pomodone or Toggl can help you track your time and assess how efficiently you work.
     

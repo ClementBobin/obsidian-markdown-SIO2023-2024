@@ -3,3 +3,4 @@ workspace.json
 *.json
 *.json
 .obsidian/workspace.json
+.obsidian/appearance.json

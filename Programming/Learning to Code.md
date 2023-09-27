@@ -34,15 +34,15 @@ Building upon the basics, advancing in coding requires dedication, practice, and
 
 - **CodinGame**: Immerse yourself in a platform that offers a wide range of coding challenges and puzzles, where you can write code in various programming languages to control characters and solve interactive problems.
     
-- **CodeCombat**: Embark on a coding adventure as you guide a hero through a fantasy world, writing code to overcome obstacles, defeat enemies, and complete quests.
+- **[CodeCombat](https://codecombat.com/)**: Embark on a coding adventure as you guide a hero through a fantasy world, writing code to overcome obstacles, defeat enemies, and complete quests.
     
-- **Screeps**: Enter the world of real-time strategy and programming, where you code units and structures to compete against other players' AI-controlled entities.
+- **[Screeps](https://screeps.com/)**: Enter the world of real-time strategy and programming, where you code units and structures to compete against other players' AI-controlled entities.
     
 - **Duskers**: Experience a unique blend of coding and survival horror, where you write scripts to control drones exploring abandoned spaceships, facing unknown dangers.
     
 - **Flexbox Defense**: Sharpen your CSS skills by strategically positioning elements using Flexbox to defend against waves of enemies in a tower-defense-style game.
     
-- **Elevator Saga**: Practice your algorithmic thinking by programming elevators to efficiently transport passengers to their desired floors in this simulation game.
+- **[Elevator Saga](https://play.elevatorsaga.com/)**: Practice your algorithmic thinking by programming elevators to efficiently transport passengers to their desired floors in this simulation game.
     
 
 These platforms provide a playful and interactive way to further develop your coding abilities. Solve puzzles, create algorithms, and tackle coding challenges while enjoying the thrill of gameplay. By participating in these coding games, you can enhance your problem-solving skills, algorithmic thinking, and coding proficiency in a fun and engaging manner. It's a unique opportunity to learn while having a great time!

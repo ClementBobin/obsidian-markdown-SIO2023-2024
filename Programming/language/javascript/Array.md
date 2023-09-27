@@ -110,6 +110,116 @@ const arr2 = [2, 4, 5];
 const intersection = array_intersection(arr1, arr2); 
 console.log(intersection); // Output: [2, 4]
 ```
+
+## Custom Array Function for Non-Consecutive Elements
+
+Here's a function `firstNonConsecutive` that returns the first non-consecutive element in an array:
+
+```js
+function firstNonConsecutive(arr) {   
+	for (let i = 0; i < arr.length - 1; ++i) {     
+		if (arr[i] + 1 !== arr[i + 1]) {       
+			return arr[i + 1];     
+		}   
+	}   
+	return null; 
+}  
+
+const numbers = [1, 2, 3, 5, 6]; console.log(firstNonConsecutive(numbers)); // Output: 5
+```
+
+## Custom Array Prototype Function
+
+You can extend the `Array.prototype` to add custom functions that can be used with any array. For example, here's a function `myUcase` that converts all array elements to uppercase:
+
+```js
+Array.prototype.myUcase = function() {   
+	for (let i = 0; i < this.length; i++) {     
+		this[i] = this[i].toUpperCase();   
+	} 
+};
+```
+
+Now, you can use `myUcase` on any array:
+
+```js
+const fruits = ['apple', 'banana', 'cherry']; 
+fruits.myUcase(); 
+console.log(fruits); // Output: ['APPLE', 'BANANA', 'CHERRY']
+```
+
+## Finding the Sum of Two Smallest Numbers in an Array
+
+To find the sum of the two smallest numbers in an array, you can use the following approach:
+
+```JS
+function sumOfTwoSmallestNumbers(arr) {   
+	const numbers = arr.slice(); // Copy the array to avoid modifying the original   
+	
+	numbers.sort(function(a, b) {     
+		return a - b;   
+	});   
+	
+	return numbers[0] + numbers[1]; 
+}  
+
+const arr = [10, 5, 3, 8, 1]; 
+const sumOfTwoSmallest = sumOfTwoSmallestNumbers(arr); 
+console.log(sumOfTwoSmallest); // Output: 4
+```
+
+In this function, we create a copy of the original array using `arr.slice()` to avoid modifying the original array. We then sort the copy in ascending order and return the sum of the first two elements.
+
+## Finding the Sum of Two Highest Numbers in an Array
+
+To find the sum of the two highest numbers in an array, you can use the following approach:
+
+```js
+function sumOfTwoHighestNumbers(arr) {   
+	const numbers = arr.slice(); // Copy the array to avoid modifying the original   
+	numbers.sort(function(a, b) {     
+		return b - a;   
+	});   
+	return numbers[0] + numbers[1]; 
+}  
+
+const arr = [10, 5, 3, 8, 1]; 
+const sumOfTwoHighest = sumOfTwoHighestNumbers(arr); 
+console.log(sumOfTwoHighest); // Output: 18
+```
+## Compact (without safety)
+
+```js
+function sumTwoSmallestNumbers(numbers){  
+  numbers = numbers.sort(function(a, b){return a - b; });
+  return numbers[0] + numbers[1];
+};
+```
+```js
+function sumTwoSmallestNumbers(numbers){  
+  numbers = numbers.sort(function(a, b){return b - a; });
+  return numbers[0] + numbers[1];
+};
+```
+## Finding the Sum of Two Highest Numbers in an Array
+
+To find the sum of the two highest numbers in an array, you can use the following approach:
+
+```js
+function sumOfTwoHighestNumbers(arr) {   
+	const numbers = arr.slice(); // Copy the array to avoid modifying the original   
+	numbers.sort(function(a, b) {     
+		return b - a;   
+	});   
+	return numbers[0] + numbers[1]; 
+}  
+
+const arr = [10, 5, 3, 8, 1]; 
+const sumOfTwoHighest = sumOfTwoHighestNumbers(arr); 
+console.log(sumOfTwoHighest); // Output: 18
+```
+
+In this function, we create a copy of the original array using `arr.slice()` to avoid modifying the original array. We then sort the copy in descending order and return the sum of the first two elements.
 ## Conclusion
 
 JavaScript arrays are fundamental data structures that allow you to store and manipulate collections of elements. Understanding how to create, access, modify, and utilize array properties and methods is essential for effective programming in JavaScript.

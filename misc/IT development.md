@@ -9,11 +9,11 @@ Programming languages for software development/applications:
 To learn the Python language a series of courses/ problems is proposed on the site France-ioi.org  
   
 #arduino_uno  
-![[Arduino_uno.png]]  
+![](asset/image/Arduino_uno.png)  
 #esp32  
-![[esp32.png]]  
+![](asset/image/esp32.png)  
 #raspberry3pi  
-![[Raspberry_pi3.png]]  
+![](asset/image/Raspberry_pi3.png)  
   
 Programming languages for WEB development:  
 - [HTML](HTML.md) (HyperText Markup Language – Hypertext markup language – represents web pages).  
@@ -25,7 +25,7 @@ The PHP language will be studied in activity.
 ## Principle of a base  
   
 The basis is the number used to define a numeration system. The base of the decimal system is ten while that of the hexadecimal system is 16 and the base of the binary system is 2. Whatever the numerical base used, it follows the following relationship:  
-![[Principe_base.png]]  
+![](asset/image/Principe_base.png)  
 Where `bi' is the rank base number `i' and `ai' is the power of the `i' rank exponent base.  
   
 *Example: base 10*  
@@ -80,7 +80,7 @@ This base will follow the same rules as base 10, seen above, so we can decompose
 (745)^8 = 448 + 32 + 5  
   
 We have just seen that: `(745)^8 = (485)^10`.  
-![[Base convertion.png]]  
+![](asset/image/Base%20convertion.png)  
 ## ASCII  
 ASCII (American Standard Code for Information Interchange) is a computer-based standard for encoding alphanumeric characters. ASCII includes 128 7-bit combinations historically that define 95 printable characters, including Arabic numerals from 0 to 9, the letters of the Latin alphabet not accented, lowercase and uppercase, punctuation symbols and some simple mathematical characters.  
   
@@ -88,7 +88,7 @@ It is well suited for encoding texts in English, but is insufficient for French,
 Thus, the combination 127 corresponds to the command to erase.
 
 The ASCII code has been extended to 8 bits to incorporate certain accented characters (including French accents). We see below the second part of the ASCII code called extended encoded on 8 bits, the first part being the historical ASCII code on 7 bits which codes in decimal from 0 to 127, in hexadecimal from 00h to 7Fh. The extension below therefore codes in decimal from 128 to 255 and in hexadecimal from 80h to FFh.
-![[ASCII.png]]
+![](asset/image/ASCII.png)
 
 ## UNICODE
 Unicode is a computer standard that allows text to be exchanged in a wide variety of languages, at a global level. It is developed by the Unicode Consortium, which aims to encode written text by giving any character of any writing system a name and numeric identifier, in a unified manner, regardless of the computer platform or software used.

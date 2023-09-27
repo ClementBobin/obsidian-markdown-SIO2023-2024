@@ -24,4 +24,19 @@ console.log(even_or_odd(7)); // Output: Odd
 
 In this function, `number % 2` calculates the remainder when `number` is divided by `2`. If the remainder is `0`, it returns `"Even"`, indicating that the number is even. If the remainder is `1`, it returns `"Odd"`, indicating that the number is odd.
 
-This markdown explains the modulus operator in JavaScript, provides an example of how to use the modulus operator to determine even or odd numbers, and includes a JavaScript function (`even_or_odd`) that utilizes the modulus operator to determine whether a number is even or odd.
+## Custom Function `mango`
+
+Here's a custom JavaScript function `mango` that calculates the price for a given quantity of mangoes, considering a special deal of buying 3 mangoes for the price of 2:
+
+```js
+function mango(quantity, price) {   
+	return price * (quantity - Math.floor(quantity / 3)); 
+}  
+
+const totalCost = mango(5, 2); // Buying 5 mangoes at $2 each 
+console.log(totalCost); // Output: 8 (2 mangoes at full price + 3 mangoes at discounted price)
+```
+
+In this function, `mango(quantity, price)` calculates the total cost of buying `quantity` mangoes at a given `price` per mango, considering the special deal of 3 mangoes for the price of 2.
+
+This markdown explains the modulus operator in JavaScript, provides an example of how to use the modulus operator to determine even or odd numbers, and includes a JavaScript function (`even_or_odd`) that utilizes the modulus operator to determine whether a number is even or odd. Additionally, it introduces a custom JavaScript function (`mango`) that calculates the price for a given quantity of mangoes with a special discount offer.

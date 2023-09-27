@@ -221,3 +221,88 @@ Access to resources via UNC paths is subject to permissions set on the shared re
 ## Conclusion
 
 UNC paths are a fundamental concept in Windows networking, providing a standardized way to access shared resources across a network. Whether you're accessing shared files, connecting to network printers, or configuring network-related tasks, understanding UNC paths is crucial for effective network management in Windows environments.
+
+# Web Hosting
+
+Web hosting refers to the service that allows individuals or organizations to make their websites accessible on the internet. It involves storing website files, databases, and other necessary data on a server connected to the internet. Web hosting providers offer the infrastructure and technologies needed to ensure websites are accessible 24/7 to users around the world.
+
+# Domain Name
+
+A domain name is a human-readable address that represents an IP (Internet Protocol) address. It provides an easy way for users to access websites without having to remember complex numerical IP addresses. Domain names are structured hierarchically, with the top-level domain (TLD) representing the highest level of the hierarchy (e.g., .com, .org, .net) followed by second-level and subsequent levels representing specific entities or organizations.
+
+## Comparison Criteria for Web Hosts
+
+When choosing a web hosting service, several criteria should be considered to ensure you select the most suitable provider for your needs:
+
+1. **Pricing**:
+    
+    - Compare monthly or annual pricing plans to understand the cost structure and choose what suits your budget best.
+2. **Presence of Ads**:
+    
+    - Check if the hosting service displays advertisements on your website, as this can impact user experience.
+3. **Storage Space**:
+    
+    - Evaluate the amount of storage space provided for your website files, databases, and media.
+4. **Bandwidth and Network Traffic**:
+    
+    - Understand the bandwidth and data transfer limits to manage the volume of data transmitted to and from your website.
+5. **Number of Websites**:
+    
+    - Determine the number of websites you can host under a single hosting plan.
+6. **Support for Dynamic Page Languages**:
+    
+    - Check if the hosting service supports the specific dynamic page languages your website uses (e.g., PHP, Python, Ruby).
+7. **Databases**:
+    
+    - Evaluate the number of databases allowed, the storage space allocated, and the supported database management systems.
+8. **File Transfer (FTP, SCP, etc.)**:
+    
+    - Assess the options and ease of file transfer methods provided for managing your website files.
+9. **Email Services**:
+    
+    - Consider the number of aliases, accounts, and storage space for emails, along with supported mail protocols.
+10. **Domain Features**:
+    
+    - Evaluate the domain-related features, including the number of subdomains, domain extensions, and DNS aliases.
+11. **Security (HTTPS, Certificates)**:
+    
+    - Check for HTTPS support, the cost of SSL certificates, validity duration, and the issuing authority.
+12. **Server Type**:
+    
+    - Choose between shared, VPS (Virtual Private Server), or dedicated servers based on your website's needs.
+13. **Location of Hosting and Data Centers**:
+    
+    - Determine if the hosting is in your desired location (e.g., France, Europe) and check the ownership of data centers.
+14. **Compliance with GDPR**:
+    
+    - Ensure the hosting service complies with the General Data Protection Regulation (GDPR) for data privacy and protection.
+15. **Security Measures**:
+    
+    - Check for security features like firewall, antispam, antivirus, and DDoS protection.
+16. **Technical Support**:
+    
+    - Evaluate the availability and quality of technical support through various channels (social media, chat, forum, phone).
+17. **Automated CMS Installation**:
+    
+    - Check if the hosting service offers automatic installation of content management systems (CMS) or other applications.
+18. **Website Templates and Models**:
+    
+    - Consider the availability of pre-designed website templates and models to facilitate website creation.
+19. **Remote Secure Administration**:
+    
+    - Check if secure remote administration through command-line interface (SSH) is available.
+20. **Mobile Compatibility (Responsive Design)**:
+    
+    - Assess the compatibility and responsiveness of the hosting service with mobile devices.
+21. **Stability and Availability**:
+    
+    - Consider the stability and high availability of the hosting service to ensure your website is accessible.
+22. **Backup Options**:
+    
+    - Evaluate the backup options, including historical data, frequency, automatic backups, and off-site storage.
+23. **Performance and Hardware Configuration**:
+    
+    - Consider the server's hardware configuration and its impact on website performance, including server response time and page loading speed.
+24. **Database Query Execution Speed**:
+    
+    - Assess the speed of executing a query in the database to optimize database-related operations.

@@ -4,7 +4,7 @@
   
 An Ethernet frame is a data packet format used for communication in a local area network (LAN). It is composed of several fields, each playing a specific role in the data transmission process.  
   
-![[trame ethernet.PNG]]  
+![](asset/image/trame%20ethernet.PNG)  
 ### Ethernet Frame Fields  
   
 1. **Preambule (7 bytes):** A bit pattern used to synchronize the receiver with the signal.  
@@ -35,7 +35,7 @@ An Ethernet frame is a data packet format used for communication in a local area
 ## IP Datagram  
   
 An IP datagram is a data packet used in IP networks to route information from one host to another.  
-![[datagramme ip.PNG]]  
+![](asset/image/datagramme%20ip.PNG)  
 ### IP Datagram Fields  
   
 1. **Version (4 bits):** Indicates the version of the IP protocol used (IPv4 or IPv6).  

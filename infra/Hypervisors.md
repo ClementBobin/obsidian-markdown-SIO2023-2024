@@ -12,7 +12,7 @@ Type 1 hypervisors, also known as **bare-metal hypervisors**, run directly on th
 Type 2 hypervisors, also known as **hosted hypervisors**, run on top of a host operating system and are ideal for desktop or development use. They are simpler to set up and are suitable for scenarios where performance is less critical. 
 
 **Example Type 2 Hypervisor: VirtualBox** 
-[[VirtualBox]] is a popular open-source Type 2 hypervisor developed by Oracle. It allows you to run multiple virtual machines with different guest operating systems on your desktop or laptop computer. It's versatile, user-friendly, and great for testing and development. 
+[[VirtualBox]] is a popular open-source Type 2 hypervisor and a logiciel developed by Oracle. It allows you to run/simulate multiple virtual machines with different guest operating systems on your desktop or laptop computer (physical). It's versatile, user-friendly, and great for testing and development. 
 
 **Example Type 2 Hypervisor: VMware
 

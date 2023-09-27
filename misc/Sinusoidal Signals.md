@@ -54,4 +54,4 @@ Electrical signals are fundamental in electronics and power systems. Sinusoidal 
 
 Understanding sinusoidal electrical signals and energy is crucial for designing, analyzing, and optimizing AC circuits, power systems, and electrical devices. It enables engineers to efficiently transmit and use electrical power while minimizing losses and ensuring safe operation.
 
-![[01-Le-regime-sinusoidal.pdf]]
+![](asset/pdf/01-Le-regime-sinusoidal.pdf)

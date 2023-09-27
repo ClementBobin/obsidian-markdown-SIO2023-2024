@@ -109,4 +109,4 @@ function complexFunction() {
 Avoiding excessive nesting is crucial for writing maintainable, readable, and reliable code. By flattening conditional logic, extracting functions, and employing early returns, developers can create code that is easier to understand, debug, and maintain. Prioritizing clean and structured code over deep nesting contributes to a more efficient and collaborative development process.
 
 # Out source:
-[Why You Shouldn't Nest Your Code](https://www.youtube.com/watch?v=CFRhGnuXG-4&t=2s)
+![Why You Shouldn't Nest Your Code](https://www.youtube.com/watch?v=CFRhGnuXG-4&t=2s)
