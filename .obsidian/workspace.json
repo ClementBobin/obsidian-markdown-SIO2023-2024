@@ -8,12 +8,25 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d3810b4db21c9697",
+            "id": "62edb2759aca8087",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "linux/distros/nixos/NixOS.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5ffb4d613c9f8986",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nix-channel.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -160,11 +173,12 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "d3810b4db21c9697",
+  "active": "62edb2759aca8087",
   "lastOpenFiles": [
+    "nix-channel.md",
+    "linux/distros/nixos/NixOS.md",
     "linux/distros/nixos/installation/install.md",
     "linux/distros/nixos/installation.md",
-    "linux/distros/nixos/NixOS.md",
     "A faire.md",
     "linux/distros/nixos/installation",
     "linux/distros/nixos",
@@ -194,7 +208,6 @@
     "asset/image/class ip.png",
     "asset/image/electronic 1.png",
     "Programming/encryption/secure stockage.md",
-    "Programming/encryption/Padding in Encryption Algorithms.md",
     "administra/management",
     "Programming/language/javascript",
     "asset/Recording 20230921142442.webm"
