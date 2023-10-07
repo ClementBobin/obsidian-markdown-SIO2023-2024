@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "7f40bb24ac9c7242",
+        "id": "14fa3be7932f3955",
         "type": "tabs",
         "children": [
           {
-            "id": "a96bea254fa89807",
+            "id": "d3810b4db21c9697",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "linux/distros/nixos/NixOS.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "b37262165061798d",
@@ -81,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "asset/image/Principe_base.png",
+                "file": "linux/distros/nixos/NixOS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "asset/image/Principe_base.png",
+                "file": "linux/distros/nixos/NixOS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "asset/image/Principe_base.png"
+                "file": "linux/distros/nixos/NixOS.md"
               }
             }
           }
@@ -154,72 +160,41 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "floating": {
-    "id": "26bb0616dc0714bb",
-    "type": "floating",
-    "children": [
-      {
-        "id": "5d134a34e01027e4",
-        "type": "window",
-        "children": [
-          {
-            "id": "62de646b3a5d8173",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "4e761e3f2ac11fe0",
-                "type": "leaf",
-                "state": {
-                  "type": "image",
-                  "state": {
-                    "file": "asset/image/Principe_base.png"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 344,
-        "y": 54,
-        "width": 1022,
-        "height": 620,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "4e761e3f2ac11fe0",
+  "active": "d3810b4db21c9697",
   "lastOpenFiles": [
+    "linux/distros/nixos/installation/install.md",
+    "linux/distros/nixos/installation.md",
+    "linux/distros/nixos/NixOS.md",
+    "A faire.md",
+    "linux/distros/nixos/installation",
+    "linux/distros/nixos",
+    "Programming/language/Css.md",
+    "Programming/language/HTML.md",
+    "Programming/language/htmx.md",
+    "Programming/language/Php.md",
+    "docker/docker.md",
+    "Programming/Type of file.md",
+    "infra/Hypervisors.md",
+    "infra/Configuration client server.md",
+    "docker/Containerization.md",
+    "Programming/TDD.md",
+    "Programming/Unit Tests.md",
+    "Programming/language/javascript/Javascript.md",
+    "Programming/Rules/Don't Write Comments.md",
+    "Programming/Rules/Dependency Injection.md",
+    "Programming/Rules/Abstraction.md",
+    "Best inspiration.md",
+    "infra/proxmox.md",
+    "infra/OS Management.md",
+    "infra/File Management Systems.md",
+    "administra/management/Activity Planning.md",
+    "asset/image/Principe_base.png",
     "asset/image/types de réseaux.png",
     "asset/image/Base convertion.png",
     "asset/image/class ip.png",
     "asset/image/electronic 1.png",
     "Programming/encryption/secure stockage.md",
     "Programming/encryption/Padding in Encryption Algorithms.md",
-    "Programming/encryption/Key Management.md",
-    "Programming/encryption/Data Encryption.md",
-    "Programming/language/React/Framework/Vite.md",
-    "Programming/language/React/Module/Tooltip.md",
-    "Programming/language/React/Module/Three.js.md",
-    "Programming/language/React/Module/Tailwindcss.md",
-    "Programming/language/React/Module/React _ Router_Dom.md",
-    "Programming/language/React/Module/Libraries.md",
-    "Programming/language/React/Module/Framer-motion.md",
-    "Programming/language/React/Module/Email.js.md",
-    "Programming/language/React/React.md",
-    "Programming/language/javascript/Array.md",
-    "Programming/language/javascript/Javascript.md",
-    "Programming/language/javascript/modulus.md",
-    "Programming/language/javascript/string.md",
-    "Programming/language/python/librarie/Math.md",
-    "Programming/language/python/Python.md",
-    "Programming/language/Css.md",
-    "Programming/language/HTML.md",
-    "Programming/language/htmx.md",
-    "Programming/language/Php.md",
-    "Programming/Rules/S.O.L.I.D Principles.md",
-    "Programming/Rules/Premature Optimization.md",
     "administra/management",
     "Programming/language/javascript",
     "asset/Recording 20230921142442.webm"

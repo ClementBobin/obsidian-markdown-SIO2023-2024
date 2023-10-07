@@ -9,6 +9,9 @@ kanban-plugin: basic
 **Complete**
 - [x] **dream bird** language
 - [x] bun (node.js)
+- [x] type of broad cast
+- [x] port
+- [x] nixos
 
 
 ## in work
