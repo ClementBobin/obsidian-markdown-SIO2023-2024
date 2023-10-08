@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FabChessQueen",
+      "FabTerminal",
       "FabLock",
       "FabLanguage",
-      "FabChessKing",
-      "RiAdminFill",
-      "FabSchool"
+      "FabChessKing"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -32,13 +32,11 @@
   "hardware": "FabHardDrive",
   "infra": "FabBuilding",
   "kubernetes": "FabShieldVirus",
-  "linux": "FabLinux",
   "macos": "RiMacbookFill",
   "misc": "FabFolderOpen",
   "networking": "FabNetworkWired",
   "Programming": "FabCode",
   "tools": "RiToolsFill",
-  "windows": "FabWindows",
   "asset/image": "FabImage",
   "asset/pdf": "FabFilePdf",
   "Programming/Rules": "FabRuler",
@@ -47,5 +45,9 @@
   "administra": "RiAdminFill",
   "Project": "FabChessKing",
   "Programming/language": "FabLanguage",
-  "Programming/encryption": "FabLock"
+  "Programming/encryption": "FabLock",
+  "OS/windows": "FabWindows",
+  "OS/linux": "FabLinux",
+  "OS/linux/distros": "FabChessQueen",
+  "OS/cmd": "FabTerminal"
 }

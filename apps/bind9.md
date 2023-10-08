@@ -1,13 +1,13 @@
 # BIND9
 
-BIND9 (Berkeley Internet Name Domain version 9) is an open-source [[DNS]] (Domain Name System) software system. It is the most widely used DNS server software on the Internet and is maintained by the Internet Systems Consortium (ISC). BIND9 provides a robust and scalable platform for resolving domain names into IP addresses and vice versa, as well as supporting advanced DNS features such as [[DNSSEC]] (DNS Security Extensions), dynamic updates, and incremental zone transfers. BIND9 runs on a variety of operating systems, including [[Linux]], [[Unix]], and [[Windows]], and is highly configurable and extensible through the use of plugins and modules.
+BIND9 (Berkeley Internet Name Domain version 9) is an open-source [[DNS]] (Domain Name System) software system. It is the most widely used DNS server software on the Internet and is maintained by the Internet Systems Consortium (ISC). BIND9 provides a robust and scalable platform for resolving domain names into IP addresses and vice versa, as well as supporting advanced DNS features such as [[DNSSEC]] (DNS Security Extensions), dynamic updates, and incremental zone transfers. BIND9 runs on a variety of operating systems, including [[linux]], [[Unix]], and [[Windows]], and is highly configurable and extensible through the use of plugins and modules.
 
 Project Homepage: https://www.isc.org/bind/
 
 ---
 ## Installation
 
-ISC provides executables for Windows and packages for [Ubuntu](linux/distros/ubuntu.md), [CentOS](linux/distros/centos.md), [Fedora](linux/distros/fedora.md)  and [Debian](linux/distros/debian.md) - BIND 9 ESV, Debian - BIND 9 Stable, Debian - BIND 9 Development version. Most operating systems also offer BIND 9 packages for their users. These may be built with a different set of defaults than the standard BIND 9 distribution, and some of them add a version number of their own that does not map exactly to the BIND 9 version.
+ISC provides executables for Windows and packages for [Ubuntu](ubuntu.md), [CentOS](centos.md), [Fedora](fedora.md)  and [Debian](debian.md) - BIND 9 ESV, Debian - BIND 9 Stable, Debian - BIND 9 Development version. Most operating systems also offer BIND 9 packages for their users. These may be built with a different set of defaults than the standard BIND 9 distribution, and some of them add a version number of their own that does not map exactly to the BIND 9 version.
 
 
 ### Ubuntu Linux

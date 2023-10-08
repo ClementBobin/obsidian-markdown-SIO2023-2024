@@ -3,4 +3,4 @@ Visual Studio Code (VS Code) is a popular code editor developed by Microsoft tha
 # VSCode (Visual Studio Code)
 
 **VSCode Shortcuts on MacOS ([[vscode-macos-shortcuts]])**
-**VSCode Shortcuts on Linux ([vscode-linux-shortcuts](linux/Vs-code-shortcut))**
+**VSCode Shortcuts on Linux ([vscode-linux-shortcuts](Vs-code-shortcut.md))**

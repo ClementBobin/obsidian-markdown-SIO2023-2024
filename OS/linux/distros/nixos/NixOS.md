@@ -384,7 +384,7 @@ NixOS provides a unique and powerful approach to operating system configuration 
 		nix-env --uninstall firefox
 		```
 	- Configuration file: 
-		- [[linux/distros/nixos/NixOS#Initial configuration]]
+		- [[NixOS#Initial configuration]]
 - Links
 	- [Packages](https://search.nixos.org/packages?channel=unstable&size=50&sort=relevance&type=packages)
 	- [Options](https://search.nixos.org/options?channel=unstable&size=50&sort=relevance&type=packages)
@@ -865,5 +865,7 @@ sudo rm -r /etc/nixos/configuration.nix
 10. [List of reference configuration](https://nixos.wiki/wiki/Configuration_Collection)
 11. [Exemple Flake](https://github.com/MatthiasBenaets/nixos-config)
 ## Video
+- Best install
 ![Link Setup guide](https://www.youtube.com/watch?v=AGVXJ-TIv3Y)
+- Normal install
 ![NixOS First Installation](https://www.youtube.com/watch?v=_Z32SYFbxpw)

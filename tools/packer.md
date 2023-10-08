@@ -50,7 +50,7 @@ The [Proxmox](infra/proxmox.md) Packer builder is able to create virtual machine
 
 TODO: WIP
 
-You can also use the [environment variables](linux/environment-variables-in-linux.md) `PROXMOX_URL`, `PROXMOX_USERNAME`, `PROXMOX_PASSWORD`, and `PROXMOX_TOKEN` to authenticate to [Proxmox](infra/proxmox.md).
+You can also use the [environment variables](environment-variables-in-linux.md) `PROXMOX_URL`, `PROXMOX_USERNAME`, `PROXMOX_PASSWORD`, and `PROXMOX_TOKEN` to authenticate to [Proxmox](infra/proxmox.md).
 
 #### Template
 

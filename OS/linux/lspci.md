@@ -49,7 +49,7 @@ The ﻿`-v` (verbose) and ﻿`-vv` (very verbose) parameters in ﻿**lspci** are
 • The ﻿`-v` option provides additional information about the devices, including the vendor and device IDs, subsystem IDs, and more.
 • The ﻿`-vv` option provides even more detailed information, including the device’s capabilities, IRQ settings, and ASPM (Active State Power Management) settings.
 
-For example, to show the [ASPM](../hardware/aspm.md) settings for the [PCI Express](../hardware/pci-express.md) device with bus address ﻿00:1c.0, you can run the following command:
+For example, to show the [ASPM](aspm.md) settings for the [PCI Express](../hardware/pci-express.md) device with bus address ﻿00:1c.0, you can run the following command:
 
 ```sh
 $ lspci -s 00:1c.0 -vv | grep -i aspm

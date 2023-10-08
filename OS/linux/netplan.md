@@ -1,6 +1,6 @@
 # Netplan
 
-Netplan is a utility for configuring network interfaces in modern versions of [Ubuntu](distros/ubuntu.md) and other Linux distributions. Netplan generates the corresponding configuration files for the underlying network configuration subsystem, such as systemd-networkd or NetworkManager.
+Netplan is a utility for configuring network interfaces in modern versions of [Ubuntu](ubuntu.md) and other Linux distributions. Netplan generates the corresponding configuration files for the underlying network configuration subsystem, such as systemd-networkd or NetworkManager.
 
 ---
 ## How to use
