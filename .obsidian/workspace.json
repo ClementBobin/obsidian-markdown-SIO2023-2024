@@ -4,18 +4,50 @@
     "type": "split",
     "children": [
       {
-        "id": "d37dae13b01fc84f",
+        "id": "7f40bb24ac9c7242",
         "type": "tabs",
         "children": [
           {
-            "id": "4660e3e5aee58d98",
+            "id": "a96bea254fa89807",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "OS/linux/distros/nixos/NixOS.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "651e1ec28d7e14c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OS/Dual Boot.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b495cfefe6e3d9ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OS/linux/distros/nixos/NixOS.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -154,45 +186,44 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "6f6cd4bb42e103dd",
+  "active": "b495cfefe6e3d9ab",
   "lastOpenFiles": [
-    "OS/linux/distros/nixos/cmd special/nix-chanel",
-    "OS/linux/distros/nixos/cmd special",
-    "OS/linux/distros/nixos/Flakes",
-    "OS/linux/distros/nixos/Home-Manager",
-    "OS/cmd/windows/comand line.md",
-    "A faire.md",
-    "README.md",
-    "OS/cmd/windows/doc.md",
+    "OS/Boot.md",
+    "OS/Dual Boot.md",
+    "OS/linux/DesktopManager",
+    "OS/linux/Desktop Environement",
     "OS/linux/distros/nixos/NixOS.md",
+    "OS/linux/distros/nixos/cmd special/nix-channel.md",
+    "OS/linux/environment-variables-in-linux.md",
+    "OS/linux/user.md",
+    "OS/linux/sed.md",
+    "OS/linux/netplan.md",
+    "OS/linux/lspci.md",
+    "OS/linux/linux.md",
+    "OS/linux/nfs.md",
+    "Programming/TDD.md",
+    "OS/linux/distros/nixos/cmd special",
     "OS/cmd/linux/special/Special OS cmd.md",
+    "OS/linux/distros/ubuntu.md",
+    "OS/linux/distros/nixos",
+    "OS/linux/distros/fedora.md",
+    "OS/linux/distros/debian.md",
+    "OS/linux/distros/centos.md",
+    "OS/cmd/windows/doc.md",
+    "OS/cmd/windows/comand line.md",
     "OS/cmd/linux/special",
+    "OS/linux/ufw.md",
+    "OS/linux/mount.md",
+    "OS/linux/iptables.md",
+    "OS/linux/grep.md",
+    "OS/linux/distros",
+    "OS/linux/cron.md",
+    "OS/linux/awk.md",
+    "OS/linux/Vs-code-shortcut.md",
     "OS/cmd/windows",
     "OS/cmd/linux",
-    "OS",
-    "linux/distros/Untitled.canvas",
-    "cmd.md",
-    "OS/cmd",
-    "OS/linux/distros/nixos/cmd special/nix-channel.md",
-    "OS/linux/distros/nixos/installation/install.md",
-    "linux/distros/nixos/installation.md",
-    "OS/linux/distros/nixos/installation",
-    "OS/linux/distros/nixos",
-    "Programming/language/Css.md",
-    "Programming/language/HTML.md",
-    "Programming/language/htmx.md",
-    "Programming/language/Php.md",
-    "docker/docker.md",
-    "Programming/Type of file.md",
-    "infra/Hypervisors.md",
-    "infra/Configuration client server.md",
-    "docker/Containerization.md",
-    "Programming/TDD.md",
-    "Programming/Unit Tests.md",
-    "Programming/language/javascript/Javascript.md",
-    "Programming/Rules/Don't Write Comments.md",
-    "Programming/Rules/Dependency Injection.md",
-    "Programming/Rules/Abstraction.md",
+    "OS/windows",
+    "OS/linux",
     "asset/image/Principe_base.png",
     "asset/image/types de réseaux.png",
     "asset/image/Base convertion.png",

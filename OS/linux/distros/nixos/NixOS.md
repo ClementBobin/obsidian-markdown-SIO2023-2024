@@ -530,6 +530,12 @@ NixOS provides a unique and powerful approach to operating system configuration 
 			};
 		};
 		```
+# NixOS Server
+## Introduction
+## Getting Started
+## Initial configuration
+## Installation
+## Extras
 # Home-Manager
 ## Introduction
 - It's like configuration.nix, but for the user environment.
