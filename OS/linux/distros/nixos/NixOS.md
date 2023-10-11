@@ -55,7 +55,7 @@ NixOS provides a unique and powerful approach to operating system configuration 
 	- GUI: gparted
 		- install gparted
 			```shell 
-			nix-env -iA nixos.gparted
+			systemctl start display-manager
 			```
 		- Device -> Create partition table -> msdos (legacy boot) (old computer / one partition / not dual boot)
 										->gpt (uefi boot) (pc>2TO)
@@ -530,12 +530,26 @@ NixOS provides a unique and powerful approach to operating system configuration 
 			};
 		};
 		```
-# NixOS Server
-## Introduction
-## Getting Started
-## Initial configuration
-## Installation
-## Extras
+# NixOS Server 
+## Introduction 
+NixOS is a modern, open-source operating system that provides a declarative and purely functional approach to system configuration and package management. This guide will walk you through setting up a NixOS server. 
+## Getting Started 
+Before you begin with the installation and configuration, make sure you have the necessary hardware and a basic understanding of Linux concepts and server management. 
+![[NixOS#NixOS#Initial configuration]]]
+## Initial Configuration 
+Ensure that you have a clear understanding of the system requirements and the specific configuration you want to achieve for your NixOS server. Decide on the necessary hardware specifications, network settings, and other relevant parameters. 
+## Installation 
+Follow these steps to install NixOS on your server: 
+![[NixOS#NixOS#Installation]]]
+## Extras 
+Explore additional features and optimizations for your NixOS server: 
+- Setting Up Services 
+	Configure and manage services on your NixOS server, such as web servers, databases, and more. 
+- Customizing Packages 
+	Learn how to customize packages and manage dependencies using the Nix package manager. 
+- Security Measures 
+	Implement security best practices to protect your NixOS server from potential threats. 
+-  Monitoring and Logging Set up monitoring tools and log management to keep track of server performance and activities. 
 # Home-Manager
 ## Introduction
 - It's like configuration.nix, but for the user environment.

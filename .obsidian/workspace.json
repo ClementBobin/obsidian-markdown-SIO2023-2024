@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7f40bb24ac9c7242",
+        "id": "026d7551143cc672",
         "type": "tabs",
         "children": [
           {
-            "id": "a96bea254fa89807",
+            "id": "03e274e5169dfc0f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OS/linux/distros/nixos/NixOS.md",
+                "file": "OS/linux/distros/nixos/cmd special/nix-store.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "651e1ec28d7e14c6",
+            "id": "a35ee50f02ff452a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OS/Dual Boot.md",
+                "file": "OS/linux/distros/nixos/cmd special/nix-event.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -34,12 +34,25 @@
             }
           },
           {
-            "id": "b495cfefe6e3d9ab",
+            "id": "2cecdee1976ac081",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OS/linux/distros/nixos/NixOS.md",
+                "file": "OS/linux/distros/nixos/cmd special/Utilities.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3d70c22aa9ecc44e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "asset/NixOS Commun store cmd.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -84,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file:",
+                "query": "line:(Model OSI)",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -113,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OS/linux/distros/nixos/NixOS.md",
+                "file": "OS/linux/distros/nixos/cmd special/Utilities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OS/linux/distros/nixos/NixOS.md",
+                "file": "OS/linux/distros/nixos/cmd special/Utilities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OS/linux/distros/nixos/NixOS.md"
+                "file": "OS/linux/distros/nixos/cmd special/Utilities.md"
               }
             }
           }
@@ -186,44 +199,45 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "b495cfefe6e3d9ab",
+  "active": "2cecdee1976ac081",
   "lastOpenFiles": [
-    "OS/Boot.md",
-    "OS/Dual Boot.md",
-    "OS/linux/DesktopManager",
-    "OS/linux/Desktop Environement",
-    "OS/linux/distros/nixos/NixOS.md",
     "OS/linux/distros/nixos/cmd special/nix-channel.md",
-    "OS/linux/environment-variables-in-linux.md",
-    "OS/linux/user.md",
-    "OS/linux/sed.md",
-    "OS/linux/netplan.md",
-    "OS/linux/lspci.md",
-    "OS/linux/linux.md",
-    "OS/linux/nfs.md",
-    "Programming/TDD.md",
-    "OS/linux/distros/nixos/cmd special",
-    "OS/cmd/linux/special/Special OS cmd.md",
-    "OS/linux/distros/ubuntu.md",
-    "OS/linux/distros/nixos",
-    "OS/linux/distros/fedora.md",
+    "OS/linux/distros/nixos/cmd special/Utilities.md",
+    "OS/linux/distros/nixos/cmd special/nix-store.md",
+    "OS/linux/distros/nixos/cmd special/nix-shell.md",
+    "OS/linux/distros/nixos/cmd special/nix-event.md",
+    "asset/NixOS Commun store cmd.md",
+    "networking/network.md",
+    "OS/linux/distros/nixos/cmd special/nix-build.md",
+    "asset/NixOS.md",
+    "asset/NixOS%20Commun%20store%20cmd.md",
+    "OS/linux/distros/nixos/NixOS.md",
+    "OS/linux/distos/nixos/cmd special/nix-store.md",
+    "OS/linux/distos/nixos/cmd special",
+    "OS/linux/distos/nixos",
+    "OS/linux/distos",
+    "OS/linux/distros/nixos/NixFlakes.md",
+    "Best inspiration.md",
+    "OS/Dual Boot.md",
+    "OS/linux/distros/nixos/Nix-HomeManager.md",
     "OS/linux/distros/debian.md",
     "OS/linux/distros/centos.md",
-    "OS/cmd/windows/doc.md",
-    "OS/cmd/windows/comand line.md",
+    "infra/Hypervisors.md",
+    "OS/windows/windows-dns-server.md",
+    "networking/ordi/communication/Serial Communication/Protocole.md",
+    "OS/windows/windows-terminal.md",
+    "tools/bitwarden.md",
+    "apps/kasm.md",
+    "Programming/Rules/S.O.L.I.D Principles.md",
+    "Programming/encryption/Key Management.md",
+    "Untitled.canvas",
+    "OS/linux/DesktopManager",
+    "OS/linux/Desktop Environement",
+    "OS/linux/distros/nixos/cmd special",
+    "OS/linux/distros/nixos",
     "OS/cmd/linux/special",
-    "OS/linux/ufw.md",
-    "OS/linux/mount.md",
-    "OS/linux/iptables.md",
-    "OS/linux/grep.md",
     "OS/linux/distros",
-    "OS/linux/cron.md",
-    "OS/linux/awk.md",
-    "OS/linux/Vs-code-shortcut.md",
     "OS/cmd/windows",
-    "OS/cmd/linux",
-    "OS/windows",
-    "OS/linux",
     "asset/image/Principe_base.png",
     "asset/image/types de réseaux.png",
     "asset/image/Base convertion.png",
