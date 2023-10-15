@@ -11,12 +11,18 @@ kanban-plugin: basic
 - [x] bun (node.js)
 - [x] type of broad cast
 - [x] port
-- [x] nixos
+- [x] NixOS home Manager
+- [x] Nix config + option general
+- [x] Nix flakes
+- [x] Docker + VirtualBox
+- [x] Serv NixOS
+- [x] NTFY
+- [x] type of file precise use case
 
 
 ## in work
 
-- [ ] revoir diapo
+- [ ] NixOS language
 
 
 ## pause
@@ -27,7 +33,6 @@ kanban-plugin: basic
 
 ## finish
 
-- [ ] type of file .iso
 - [ ] network/network (adresse mac )
 - [ ] Network/network (modern)
 - [ ] Network/network (gateway)
@@ -44,6 +49,7 @@ kanban-plugin: basic
 ## Archive
 
 - [x] b1-at cour 21/09
+- [ ] revoir diapo
 
 %% kanban:settings
 ```

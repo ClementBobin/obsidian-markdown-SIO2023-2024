@@ -1,4 +1,6 @@
 # nix-env
+[nix-env documentation stable version](https://nixos.org/manual/nix/stable/command-ref/nix-env)
+[nix-env documentation unstable version](https://nixos.org/manual/nix/unstable/command-ref/nix-env)
 ## [Name](https://nixos.org/manual/nix/unstable/command-ref/nix-env#name)
 
 `nix-env` - manipulate or query Nix user environments
@@ -207,6 +209,8 @@ The following options are allowed for all `nix-env` operations, but may not al
 ![[NixOS Commun store cmd#[Common Environment Variables](https //nixos.org/manual/nix/unstable/command-ref/nix-store/add-fixed common-environment-variables)]]
 []()
 # nix-env --delete-generations
+[nix-env --delete-generations documentation stable version](https://nixos.org/manual/nix/stable/command-ref/nix-env/delete-generations)
+[nix-env -- delete-generations documentation unstable version](https://nixos.org/manual/nix/unstable/command-ref/nix-env/delete-generations)
 ## [Name](https://nixos.org/manual/nix/unstable/command-ref/nix-env/delete-generations#name)
 
 `nix-env --delete-generations` - delete profile generations
@@ -288,6 +292,8 @@ This command will delete all generations older than 30 days, except for the gene
 $ nix-env --profile other_profile --delete-generations old
 ```
 # nix-env --install
+[nix-env --install documentation stable version](https://nixos.org/manual/nix/stable/command-ref/nix-env/install)
+[nix-env --install documentation unstable version](https://nixos.org/manual/nix/unstable/command-ref/nix-env/install)
 ## [Name](https://nixos.org/manual/nix/unstable/command-ref/nix-env/install#name)
 
 `nix-env --install` - add packages to user environment
@@ -472,6 +478,8 @@ To install Firefox from the latest revision in the Nixpkgs/NixOS 14.12 channel:
 $ nix-env --file https://github.com/NixOS/nixpkgs/archive/nixos-14.12.tar.gz --install --attr firefox
 ```
 # nix-env --list-generations
+[nix-env --list-generations documentation stable version](https://nixos.org/manual/nix/stable/command-ref/nix-env/list-generations)
+[nix-env --list-generations documentation unstable version](https://nixos.org/manual/nix/unstable/command-ref/nix-env/list-generations)
 ## [Name](https://nixos.org/manual/nix/unstable/command-ref/nix-env/list-generations#name)
 
 `nix-env --list-generations` - list profile generations
@@ -497,6 +505,8 @@ $ nix-env --list-generations
 ```
 
 # nix-env --query
+[nix-env --query documentation stable version](https://nixos.org/manual/nix/stable/command-ref/nix-env/query)
+[nix-env --query documentation unstable version](https://nixos.org/manual/nix/unstable/command-ref/nix-env/query)
 ## [Name](https://nixos.org/manual/nix/unstable/command-ref/nix-env/query#name)
 
 `nix-env --query` - display information about packages
@@ -655,6 +665,8 @@ To show all packages in the latest revision of the Nixpkgs repository:
 $ nix-env --file https://github.com/NixOS/nixpkgs/archive/master.tar.gz --query --available
 ```
 # nix-event --rollback
+[nix-env --rollback documentation stable version](https://nixos.org/manual/nix/stable/command-ref/nix-env/rollback)
+[nix-env --rollback documentation unstable version](https://nixos.org/manual/nix/unstable/command-ref/nix-env/rollback)
 ## [Name](https://nixos.org/manual/nix/unstable/command-ref/nix-env/rollback#name)
 
 `nix-env --rollback` - set user environment to previous generation
@@ -680,6 +692,8 @@ $ nix-env --rollback
 error: no generation older than the current (91) exists
 ```
 # nix-event --set-flag
+[nix-env --set-flag documentation stable version](https://nixos.org/manual/nix/stable/command-ref/nix-env/set-flag)
+[nix-env --set-flag documentation unstable version](https://nixos.org/manual/nix/unstable/command-ref/nix-env/set-flag)
 ## [Name](https://nixos.org/manual/nix/unstable/command-ref/nix-env/set-flag#name)
 
 `nix-env --set-flag` - modify meta attributes of installed packages
@@ -740,6 +754,8 @@ $ nix-env --set-flag priority 5 binutils
 $ nix-env --set-flag priority 10 gcc
 ```
 # nix-event --set
+[nix-env --set documentation stable version](https://nixos.org/manual/nix/stable/command-ref/nix-env/set)
+[nix-env --set documentation unstable version](https://nixos.org/manual/nix/unstable/command-ref/nix-env/set)
 ## [Name](https://nixos.org/manual/nix/unstable/command-ref/nix-env/set#name)
 
 `nix-env --set` - set profile to contain a specified derivation
@@ -760,7 +776,9 @@ The following updates a profile such that its current generation will contain ju
 ```bash
 $ nix-env --profile /nix/var/nix/profiles/browser --set firefox
 ```
-# nix-store --switch-generation
+# nix-env --switch-generation
+[nix-env --switch-generation documentation stable version](https://nixos.org/manual/nix/stable/command-ref/nix-env/switch-generation)
+[nix-env --switch-generation documentation unstable version](https://nixos.org/manual/nix/unstable/command-ref/nix-env/switch-generation)
 ## [Name](https://nixos.org/manual/nix/unstable/command-ref/nix-env/switch-generation#name)
 
 `nix-env --switch-generation` - set user environment to given profile generation
@@ -782,7 +800,9 @@ Switching will fail if the specified generation does not exist.
 $ nix-env --switch-generation 
 42 switching from generation 50 to 42
 ```
-# nix-store --switch-profile
+# nix-env --switch-profile
+[nix-env --switch-profile documentation stable version](https://nixos.org/manual/nix/stable/command-ref/nix-env/switch-profile)
+[nix-env --switch-profile documentation unstable version](https://nixos.org/manual/nix/unstable/command-ref/nix-env/switch-profile)
 ## [Name](https://nixos.org/manual/nix/unstable/command-ref/nix-env/switch-profile#name)
 
 `nix-env --switch-profile` - set user environment to given profile
@@ -800,7 +820,9 @@ This operation makes _path_ the current profile for the user. That is, the sym
 ```bash
 $ nix-env --switch-profile ~/my-profile
 ```
-# nix-store --uninstall
+# nix-env --uninstall
+[nix-env --uninstall documentation stable version](https://nixos.org/manual/nix/stable/command-ref/nix-env/uninstall)
+[nix-env --uninstall documentation unstable version](https://nixos.org/manual/nix/unstable/command-ref/nix-env/uninstall)
 ## [Name](https://nixos.org/manual/nix/unstable/command-ref/nix-env/uninstall#name)
 
 `nix-env --uninstall` - remove packages from user environment
@@ -820,7 +842,9 @@ The uninstall operation creates a new user environment, based on the current gen
 $ nix-env --uninstall gcc 
 $ nix-env --uninstall '.*' (remove everything)
 ```
-# nix-store --upgrade
+# nix-env --upgrade
+[nix-env --upgrade documentation stable version](https://nixos.org/manual/nix/stable/command-ref/nix-env/upgrade)
+[nix-env --upgrade documentation unstable version](https://nixos.org/manual/nix/unstable/command-ref/nix-env/upgrade)
 ## [Name](https://nixos.org/manual/nix/unstable/command-ref/nix-env/upgrade#name)
 
 `nix-env --upgrade` - upgrade packages in user environment

@@ -1,31 +1,129 @@
 # NixOS
 ## Introduction
+### Nix
+Nix is a _purely functional package manager_. This means that it treats packages like values in purely functional programming languages such as Haskell — they are built by functions that don’t have side-effects, and they never change after they have been built. Nix stores packages in the _Nix store_, usually the directory `/nix/store`, where each package has its own unique subdirectory such as
 
+```
+/nix/store/b6gvzjyb2pg0kjfwrjmg1vfhh54ad73z-firefox-33.1/
+```
+
+where `b6gvzjyb2pg0…` is a unique identifier for the package that captures all its dependencies (it’s a cryptographic hash of the package’s build dependency graph). This enables many powerful features.
+
+#### [Multiple versions](https://nixos.org/manual/nix/unstable/introduction#multiple-versions)
+
+You can have multiple versions or variants of a package installed at the same time. This is especially important when different applications have dependencies on different versions of the same package — it prevents the “DLL hell”. Because of the hashing scheme, different versions of a package end up in different paths in the Nix store, so they don’t interfere with each other.
+
+An important consequence is that operations like upgrading or uninstalling an application cannot break other applications, since these operations never “destructively” update or delete files that are used by other packages.
+
+#### [Complete dependencies](https://nixos.org/manual/nix/unstable/introduction#complete-dependencies)
+
+Nix helps you make sure that package dependency specifications are complete. In general, when you’re making a package for a package management system like RPM, you have to specify for each package what its dependencies are, but there are no guarantees that this specification is complete. If you forget a dependency, then the package will build and work correctly on _your_ machine if you have the dependency installed, but not on the end user's machine if it's not there.
+
+Since Nix on the other hand doesn’t install packages in “global” locations like `/usr/bin` but in package-specific directories, the risk of incomplete dependencies is greatly reduced. This is because tools such as compilers don’t search in per-packages directories such as `/nix/store/5lbfaxb722zp…-openssl-0.9.8d/include`, so if a package builds correctly on your system, this is because you specified the dependency explicitly. This takes care of the build-time dependencies.
+
+Once a package is built, runtime dependencies are found by scanning binaries for the hash parts of Nix store paths (such as `r8vvq9kq…`). This sounds risky, but it works extremely well.
+
+#### [Multi-user support](https://nixos.org/manual/nix/unstable/introduction#multi-user-support)
+
+Nix has multi-user support. This means that non-privileged users can securely install software. Each user can have a different _profile_, a set of packages in the Nix store that appear in the user’s `PATH`. If a user installs a package that another user has already installed previously, the package won’t be built or downloaded a second time. At the same time, it is not possible for one user to inject a Trojan horse into a package that might be used by another user.
+
+#### [Atomic upgrades and rollbacks](https://nixos.org/manual/nix/unstable/introduction#atomic-upgrades-and-rollbacks)
+
+Since package management operations never overwrite packages in the Nix store but just add new versions in different paths, they are _atomic_. So during a package upgrade, there is no time window in which the package has some files from the old version and some files from the new version — which would be bad because a program might well crash if it’s started during that period.
+
+And since packages aren’t overwritten, the old versions are still there after an upgrade. This means that you can _roll back_ to the old version:
+
+```bash
+$ nix-env --upgrade --attr nixpkgs.some-package 
+$ nix-env --rollback
+```
+
+#### [Garbage collection](https://nixos.org/manual/nix/unstable/introduction#garbage-collection)
+
+When you uninstall a package like this…
+
+```bash
+$ nix-env --uninstall firefox
+```
+
+the package isn’t deleted from the system right away (after all, you might want to do a rollback, or it might be in the profiles of other users). Instead, unused packages can be deleted safely by running the _garbage collector_:
+
+```bash
+$ nix-collect-garbage
+```
+
+This deletes all packages that aren’t in use by any user profile or by a currently running program.
+
+#### [Functional package language](https://nixos.org/manual/nix/unstable/introduction#functional-package-language)
+
+Packages are built from _Nix expressions_, which is a simple functional language. A Nix expression describes everything that goes into a package build task (a “derivation”): other packages, sources, the build script, environment variables for the build script, etc. Nix tries very hard to ensure that Nix expressions are _deterministic_: building a Nix expression twice should yield the same result.
+
+Because it’s a functional language, it’s easy to support building variants of a package: turn the Nix expression into a function and call it any number of times with the appropriate arguments. Due to the hashing scheme, variants don’t conflict with each other in the Nix store.
+
+#### [Transparent source/binary deployment](https://nixos.org/manual/nix/unstable/introduction#transparent-sourcebinary-deployment)
+
+Nix expressions generally describe how to build a package from source, so an installation action like
+
+```bash
+$ nix-env --install --attr nixpkgs.firefox
+```
+
+_could_ cause quite a bit of build activity, as not only Firefox but also all its dependencies (all the way up to the C library and the compiler) would have to be built, at least if they are not already in the Nix store. This is a _source deployment model_. For most users, building from source is not very pleasant as it takes far too long. However, Nix can automatically skip building from source and instead use a _binary cache_, a web server that provides pre-built binaries. For instance, when asked to build `/nix/store/b6gvzjyb2pg0…-firefox-33.1` from source, Nix would first check if the file `https://cache.nixos.org/b6gvzjyb2pg0….narinfo` exists, and if so, fetch the pre-built binary referenced from there; otherwise, it would fall back to building from source.
+
+#### [Nix Packages collection](https://nixos.org/manual/nix/unstable/introduction#nix-packages-collection)
+
+We provide a large set of Nix expressions containing hundreds of existing Unix packages, the _Nix Packages collection_ (Nixpkgs).
+
+#### [Managing build environments](https://nixos.org/manual/nix/unstable/introduction#managing-build-environments)
+
+Nix is extremely useful for developers as it makes it easy to automatically set up the build environment for a package. Given a Nix expression that describes the dependencies of your package, the command `nix-shell` will build or download those dependencies if they’re not already in your Nix store, and then start a Bash shell in which all necessary environment variables (such as compiler search paths) are set.
+
+For example, the following command gets all dependencies of the Pan newsreader, as described by [its Nix expression](https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/networking/newsreaders/pan/default.nix):
+
+```bash
+$ nix-shell '<nixpkgs>' --attr pan
+```
+
+You’re then dropped into a shell where you can edit, build and test the package:
+
+```bash
+[nix-shell]$ unpackPhase 
+[nix-shell]$ cd pan-* 
+[nix-shell]$ configurePhase 
+[nix-shell]$ buildPhase 
+[nix-shell]$ ./pan/gui/pan
+```
+
+#### [Portability](https://nixos.org/manual/nix/unstable/introduction#portability)
+
+Nix runs on Linux and macOS.
+
+### NixOS
 NixOS is a modern, open-source operating system built on the Nix package manager. It is designed to provide a declarative and purely functional approach to system configuration and package management. NixOS stands out from other Linux distributions due to its unique features and philosophies.
 
-### Key Features
+#### Key Features
 
-### 1. **Declarative System Configuration**
+#### 1. **Declarative System Configuration**
 
 NixOS employs a declarative configuration model. System configuration is described in a configuration file, typically `/etc/nixos/configuration.nix`. This approach allows users to define the desired state of the system explicitly, making it easy to understand and reproduce configurations.
 
-### 2. **Immutable Packages and Rollbacks**
+#### 2. **Immutable Packages and Rollbacks**
 
 Nix, the package manager used by NixOS, manages packages in an immutable fashion. This immutability ensures that packages do not change after installation, promoting consistency and stability. Additionally, NixOS supports easy rollbacks, enabling users to revert to a previous system configuration if needed.
 
-### 3. **Atomic Upgrades**
+#### 3. **Atomic Upgrades**
 
 NixOS supports atomic upgrades, meaning system updates are performed as a single, atomic transaction. This ensures that either all updates are applied successfully, or none of them are, preventing potential system inconsistencies.
 
-### 4. **Functional Package Management**
+#### 4. **Functional Package Management**
 
 Packages in NixOS are built using a functional approach. Each package is isolated and built in its own environment, with all dependencies specified explicitly. This eliminates dependency conflicts and allows for reproducible builds.
 
-### 5. **Nix Expression Language**
+#### 5. **Nix Expression Language**
 
 The Nix package manager and NixOS use a unique functional programming language for configuration called the Nix Expression Language (Nix). Nix provides a powerful and flexible way to describe packages and system configurations.
 
-### Use Cases
+#### Use Cases
 
 - **Development Environments**: NixOS is well-suited for creating consistent and isolated development environments, making it easier for developers to manage dependencies.
     
@@ -33,7 +131,7 @@ The Nix package manager and NixOS use a unique functional programming language f
     
 - **Reproducible Systems**: NixOS is ideal for creating reproducible systems, ensuring that a system's state can be replicated across different machines.
     
-### Point of use
+#### Point of use
 1. Linux distribution based on Nix Package manager
 2. Supports declarative reproducible system configuration
 3. "Unbreakable"
@@ -41,7 +139,7 @@ The Nix package manager and NixOS use a unique functional programming language f
 4. nix-store: no /lib & /usr/lib. almost non-existant /bin & /usr/bin -> /nix/store
 5. nix-env: install packages at user level without having to change system state
 
-### Conclusion
+#### Conclusion
 
 NixOS provides a unique and powerful approach to operating system configuration and package management. Its declarative model, immutable packages, and functional design make it a compelling choice for those seeking reliability, consistency, and ease of management in their computing environments. Whether for development or production use, NixOS offers a fresh perspective on how we interact with and manage operating systems.
 
