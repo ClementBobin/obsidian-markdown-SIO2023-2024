@@ -9,13 +9,10 @@ kanban-plugin: basic
 **Complete**
 - [x] **dream bird** language
 - [x] bun (node.js)
-- [x] type of broad cast
-- [x] port
 
 
 ## in work
 
-- [ ] cmd linux
 - [ ] Nix config + option general
 - [ ] encrypt data disk
 - [ ] Serv NixOS
@@ -37,13 +34,16 @@ kanban-plugin: basic
 - [ ] F12
 - [ ] python
 - [ ] système gestion fichiers
-- [ ] tracepath asymm
 - [ ] cour b1
 - [ ] NTFY
 - [ ] NixOS language
 - [ ] type of file precise use case
 - [ ] Docker + VirtualBox
 - [ ] Desktop KDE Plasma 5
+- [ ] cmd linux
+- [ ] type of broad cast
+- [ ] tracepath asymm
+- [ ] port
 
 
 ***
