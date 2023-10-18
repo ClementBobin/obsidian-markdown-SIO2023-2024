@@ -11,24 +11,20 @@ kanban-plugin: basic
 - [x] bun (node.js)
 - [x] type of broad cast
 - [x] port
-- [x] NixOS home Manager
-- [x] Nix config + option general
-- [x] Nix flakes
-- [x] Docker + VirtualBox
-- [x] Serv NixOS
-- [x] NTFY
-- [x] type of file precise use case
 
 
 ## in work
 
-- [ ] NixOS language
+- [ ] cmd linux
+- [ ] Nix config + option general
+- [ ] encrypt data disk
+- [ ] Serv NixOS
 
 
 ## pause
 
-- [ ] cmd linux
 - [ ] codewars translation
+- [ ] Nix flakes
 
 
 ## finish
@@ -37,11 +33,17 @@ kanban-plugin: basic
 - [ ] Network/network (modern)
 - [ ] Network/network (gateway)
 - [ ] network/network (notation CIDR)
+- [ ] NixOS home Manager
 - [ ] F12
 - [ ] python
 - [ ] système gestion fichiers
 - [ ] tracepath asymm
 - [ ] cour b1
+- [ ] NTFY
+- [ ] NixOS language
+- [ ] type of file precise use case
+- [ ] Docker + VirtualBox
+- [ ] Desktop KDE Plasma 5
 
 
 ***

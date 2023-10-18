@@ -208,6 +208,280 @@ NixOS provides a unique and powerful approach to operating system configuration 
 		```shell
 		lsblk -f
 		```
+### Encrypt Disk
+1. **Warning: be extremely careful with disk labels when following this tutorial.** Devices and partitions may appear under different labels on your system. Using commands like `dd` or `cryptsetup luksFormat` will cause permanent data loss! Use `lsblk` in order to check disk labels if at all unsure.
+
+All commands must be run as the `root` user. This may be done using `sudo`, or by opening a root shell. In order to open a root shell, simply run:
+
+```bash
+sudo su root
+```
+
+#### Prepare Disks
+
+This step is entirely optional. We will prepare the disk devices by erasing them. We will first _zeroise_ `/dev/sdb`, in order to completely wipe it.
+
+```bash
+dd if=/dev/zero of=/dev/sdb status=progress
+```
+
+Next, we will wipe `/dev/sda` by filling it with random data.
+
+```bash
+dd if=/dev/urandom of=/dev/sda status=progress
+```
+
+The reason we wipe the primary device by filling it with random data, instead of simply zero-ising it, is to make the size of the encrypted content undeterminable.
+
+Now `/dev/sda` and `/dev/sdb` are fully prepared. We are ready to create partition tables, and partitions within them.
+
+#### Create Partitions
+
+We will have the following partition scheme. The specific [method (or scenario)](https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#Overview) that we will implement for our Full Disk Encryption (FDE) is to mount an [LVM (Logical Volume Manager)](https://en.wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29) on top of our LUKS2 Container. LVM volumes are then created to reflect the different partitions on our root filesystem. This method is referred to as [LVM on LUKS](https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LVM_on_LUKS) and is a common method of implementing FDE on Linux devices.
+
+`/dev/sda` **Primary device**
+
+- `/dev/sda1` LUKS2 Container `crypted`
+- LVM Volume Group `vg`
+- LVM Logical Volume `vg-swap`
+- LVM Logical Volume `vg-nixos`
+- and any other partitions...
+
+`/dev/sdb` **Portable device**
+
+- `/dev/sdb1` `boot` Partition
+- `/dev/sdb2` LUKS2 Detached Header
+
+The underlying root `\`, `\home`, and swap partitions will be created as LVM virtual volumes within the LUKS2 container.
+
+We will first proceed to make the partition table and partition for the primary `/dev/sda` device, then for the portable `/dev/sdb` device. We will be using `parted` as the tool to create partitions.
+
+##### Make root partition on primary device `/dev/sda`
+
+We will be using the [`parted` command-line tool](https://www.gnu.org/software/parted/manual/parted.html) to create all of our partitions.
+
+Create a [`gpt` partition table](https://en.wikipedia.org/wiki/GUID_Partition_Table) for `/dev/sda`. Other partition table formats like `msdos` are not necessary.
+
+```bash
+parted /dev/sda -- mklabel gpt
+```
+
+Create primary partition for `/dev/sda`. This will take up all of the space on the primary `/dev/sda` device, since it will hold a LUKS2 encryption container. Other partitions (such as swap, or `/home`) will be created within the encryption container.
+
+```bash
+parted /dev/sda -- mkpart primary 0% 100%
+```
+
+The partition setup for the primary `/dev/sda` device is now complete. We will now proceed to partition the `/dev/sdb` portable device (i.e. the USB, MicroSD card).
+
+##### Make boot partition on portable device `/dev/sdb`
+
+Create a `gpt` partition table for `/dev/sdb`.
+
+```bash
+parted /dev/sdb -- mklabel gpt
+```
+
+Create boot partition for `/dev/sdb`. This is the unencrypted partition that will contain the bootloader for the operating system. It will reside on the portable device, which should be stored securely when not in use.
+
+```bash
+parted /dev/sdb -- mkpart ESP fat32 0% 50%
+```
+
+We must set some flags to indicate that this partition contains the bootloader.
+
+```bash
+parted /dev/sdb -- set 1 boot on
+```
+
+Now we will use the remaining space on the portable device to create a partition for the LUKS2 detached header. This partition will not actually contain a filesystem, since the LUKS2 detached header will be read as a raw header.
+
+```bash
+parted /dev/sdb -- mkpart primary 50% 100%
+```
+
+I choose to devote the remaining 50% of the device's space, simply because the MicroSD card will not be used for any other purpose. However, in practice a smaller partition can be allocated for the LUKS2 detached header. Unlike LUKS1, the detached header [does not have a static, fixed size](https://security.stackexchange.com/a/227358). However in practice a partition of 16MB should be more than enough.
+
+#### Make filesystem for boot partition
+
+We will make a `FAT32` filesystem for the boot partition. We are using `FAT32` instead of `ext4` for greater compatibility with bootloaders.
+
+```bash
+mkfs.fat -F 32 -n boot /dev/sdb1
+```
+
+It is not necessary to make a filesystem for the LUKS2 header partition `/dev/sdb2`. This is because the LUKS2 header will reside as a _raw_ header without any underlying file system. This avoids the complications of the bootloader having to mount a filesystem before reading the header file.
+
+#### Make LUKS2 Encryption Container with detached headers
+
+We will now use the `cryptsetup` command to create the LUKS2 Encryption container. We will invoke the `luksFormat` action on `/dev/sda1` in order to do so. The command comes with a set of sensible and sane cryptographic defaults, however you may choose to explore [further configuration options](https://wiki.archlinux.org/title/Dm-crypt/Device_encryption#Encryption_options_for_LUKS_mode) if you desire.
+
+The location of the LUKS2 wrapper is on the primary hard drive `/dev/sda1`.
+
+The LUKS2 header which contains the metadata is on raw partition `/dev/sdb2`
+
+This command will prompt you to enter a password. This password will be used to unlock the primary device when the computer boots.
+
+```bash
+cryptsetup luksFormat /dev/sda1 --type luks2 --header /dev/sdb2
+```
+
+#### Open LUKS2 Container
+
+A LUKS2 container has been created on `/dev/sda1`, with it's corresponding header file located at `/dev/sdb2`.
+
+In order to use this container, we must unlock it using the following command. You will be asked to input the decryption password from the previous step.
+
+```bash
+cryptsetup luksOpen /dev/sda1 crypted --header /dev/sdb2
+```
+
+Now the container will be available as `crypted`, at `/dev/mapper/crypted`.
+
+#### Create a LVM Volume within the LUKS2 Container
+
+We will now create a set of LVM volumes within the LUKS2 container. This way we may have other multiple logical partitions within the container itself.
+
+First, we will initialise the physical volume `crypted`. This step is necessary in order to create logical volumes within it.
+
+```bash
+pvcreate /dev/mapper/crypted
+```
+
+Next, we will create a volume group upon the newly-initialised physical volume. This volume group will be called `vg`.
+
+```bash
+vgcreate vg /dev/mapper/crypted
+```
+
+Now that the volume group is made, we can make arbitrary logical volumes. These logical volumes correspond to the unencrypted partitions of a traditional Linux installation.
+
+Although it is possible to make multiple partitions corresponding to different mount points (such as `/home`, `/etc`, `var`, etc), in practice this is not necessary. This is because the main benefit of having a separate `/home` partition is easier recovery, where the `/home` partition can be mounted separately in a rescue process.
+
+Because all partitions reside within the encrypted LUKS2 container, which must be unlocked for access, there is no benefit to having separate partitions. Hence we will only create a root and swap partition.
+
+##### Create a swap partition within the LVM volume
+
+Create a [swap partition](https://en.wikipedia.org/wiki/Memory_paging#Unix_and_Unix-like_systems) with the label `swap`. Note that we use the option `-L` which denotes a numerical size. In the following command, a 16 GB swap partition is created.
+
+```bash
+lvcreate -L 16G -n swap vg
+```
+
+There are [differing opinions](https://askubuntu.com/questions/62073/how-to-decide-on-swap-size) on the appropriate size for a swap partition on modern Linux. In particular, if you wish to to enable [hibernation](https://www.kernel.org/doc/html/latest/power/basic-pm-debugging.html) you must have the same amount of swap as your RAM.
+
+##### Create a root partition within the LVM volume
+
+Create a root partition with the label `nixos` using the remaining free space. Note that we use the option `-l` which denotes a percentage.
+
+```bash
+lvcreate -l '100%FREE' -n nixos vg
+```
+
+Now the LVM volumes are created, and ready to be used.
+
+#### Create Filesystem and Swap
+
+After creating the volumes, we must create filesystems that will reside on them. For this guide, we will use a relatively ordinary [`ext4` filesystem](https://en.wikipedia.org/wiki/Ext4). You may substitute more exotic filesystems such as [`ZFS`](https://en.wikipedia.org/wiki/ZFS) or [`btfs`](https://en.wikipedia.org/wiki/Btrfs) if desired.
+
+```bash
+mkfs.ext4 -L nixos /dev/vg/nixos
+mkswap -L swap /dev/vg/swap
+```
+
+After creating the filesystems, we will mount them (and activate swap).
+
+#### Mount filesystems
+
+Mount the root partition
+
+```bash
+mount /dev/disk/by-label/nixos /mnt
+```
+
+Mount the boot partition
+
+```bash
+mkdir -p /mnt/boot
+mount /dev/sdb1 /mnt/boot
+```
+
+Activate swap
+
+```bash
+swapon /dev/vg/swap
+```
+
+Now our filesystems are mounted. The future NixOS installation's root will be accessible at `/mnt`, and it's boot partition at `/mnt/boot`.
+
+#### Configure NixOS
+
+We can now instruct NixOS to generate a set of configuration files for our installation. Make sure to pass the `--root /mnt` flag, in order to indicate where the root filesystem resides.
+
+```bash
+nixos-generate-config --root /mnt
+```
+
+Now the configuration files will be available at `/mnt/etc/nixos`. We must modify this file in order to add the appropriate settings.
+
+##### Configure configurations.nix
+
+We can now specify the configuration of the NixOS installation using `configurations.nix`. The included example configuration file has various options that can be explored. In particular, you should check out the following:
+
+- [User configuration](https://nixos.org/manual/nixos/stable/index.html#sec-user-management)
+- [Enabling NetworkManager for WiFi](https://nixos.org/manual/nixos/stable/index.html#sec-networkmanager)
+
+Once generic configurations are complete, we must add the specific `boot.initrd.luks.devices` settings which will allow the system to boot.
+
+The following section must be added. We are specifying for NixOS that there is a dictionary of `boot.initrd.luks.devices`, where there exists a device `crypted` with configuration options enclosed in another dictionary.
+
+```nix
+# Configuration options for LUKS Device
+boot.initrd.luks.devices = {
+  crypted = {
+    device = "/dev/disk/by-partuuid/<PARTUUID of /dev/sda1>";
+    header = "/dev/disk/by-partuuid/<PARTUUID of /dev/sdb2>";
+    allowDiscards = true; # Used if primary device is a SSD
+    preLVM = true;
+  };
+};
+```
+
+We must specify the `device` directive which is a path that points to the encrypted primary partition `/dev/sda1`, as well as `header` which is a path that points to the LUKS2 Header located on `/dev/sdb2`.
+
+These paths can be specified in more than one way. You can see the various ways that this path is specified by listing the subdirectories in `/dev/disk`.
+
+I recommend specifying the paths using `/dev/disk/by-partuuid` instead of `/dev/disk/by-uuid`, because `/dev/sda1` does not have a `uuid` assigned to it, since it doesn't have a filesystem.
+
+Hence in order to find the UUIDs of /dev/sda1 and /deb/sdb2, run:
+
+`blkid /dev/sda1 -s PARTUUID`
+
+Or you may simply run `ls -l /dev/disk/by-partuuid`
+
+##### Installation
+
+After setting the configuration options, it is time to install the device. You will need to have an internet connection, as NixOS will be downloading and compiling sources. Either connect to an ethernet cable, or a WiFi network.
+
+Now run `nixos-install`. We will specify the option `--cores 0` to let NixOS use all CPU cores when compiling binaries.
+
+```bash
+nixos-install --root /mnt --cores 0
+```
+
+This command will take anywhere from 5 to 25 minutes, depending on the configuration of the system and the speed of the internet connection.
+
+Once the installation is nearly complete, it will prompt you to set a root password for the newly installed system. After setting the password, the installation is complete.
+
+```bash
+reboot
+```
+
+#### Post-Installation
+
+When the installation is complete, perform a reboot. Now you must enter the BIOS/UEFI interface of your computer's firmware, and change it's boot settings to use the bootloader located on the portable device `/dev/sdb1` by default.
+
+Now your NixOS installation is complete
 ## Initial configuration
 - Generate
 	- Generate default configuration:
@@ -637,8 +911,51 @@ Before you begin with the installation and configuration, make sure you have the
 ## Initial Configuration 
 Ensure that you have a clear understanding of the system requirements and the specific configuration you want to achieve for your NixOS server. Decide on the necessary hardware specifications, network settings, and other relevant parameters. 
 ## Installation 
-Follow these steps to install NixOS on your server: 
-![[NixOS#NixOS#Installation]]]
+### Server
+Use [minimal iso image](https://channels.nixos.org/nixos-23.05/latest-nixos-minimal-x86_64-linux.iso) to create a server
+then follow config
+### Virtualbox
+#### Using OVA 
+- Download the OVA file [here](https://channels.nixos.org/nixos-23.05/latest-nixos-x86_64-linux.ova).
+- Open VirtualBox.
+- Run `File → Import Appliance` from the menu.
+- Select previously downloaded OVA file.
+- Click `Import`.
+- You can then start the virtual machine.
+- You can log in as **user `demo`**, **password `demo`**.
+- To obtain a root shell, run `sudo -i` in the terminal (`konsole`).
+#### Normal install
+[[NixOS#Installation]]
+### AWS Command Line
+
+You can also create an instance from the command line. For example, to create an instance in region `eu-west-1` using the EC2 API tools, just run:
+
+```bash
+$ nix-shell -p ec2_api_tools
+(nix-shell) 
+$ ec2-run-instances ami-0fc7825fe890f87d1 --region eu-west-1 -k _my-key-pair_
+```
+### Docker
+- here is the docker machine [link](https://hub.docker.com/r/nixos/nix)
+```
+FROM nixos/nix
+
+RUN nix-channel --update
+
+RUN nix-build -A pythonFull '<nixpkgs>'
+```
+#### Docker Pull Command
+
+```
+docker pull nixos/nix
+```
+#### Limitations
+
+By default [sandboxing](https://nixos.org/manual/nix/stable/#conf-sandbox) is turned off inside the container, even though it is enabled in new installations of nix. This can lead to differences between derivations built inside a docker container versus those built without any containerization, especially if a derivation relies on sandboxing to block sideloading of dependencies.
+
+To enable sandboxing the container has to be started with the [`--privileged`](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities) flag and `sandbox = true` set in `/etc/nix/nix.conf`.
+## Config
+
 ## Extras 
 Explore additional features and optimizations for your NixOS server: 
 - Setting Up Services 
@@ -982,6 +1299,7 @@ sudo rm -r /etc/nixos/configuration.nix
 9. [Home-Manager Appendix B](https://nix-community.github.io/home-manager/nixos-options.html)
 10. [List of reference configuration](https://nixos.wiki/wiki/Configuration_Collection)
 11. [Exemple Flake](https://github.com/MatthiasBenaets/nixos-config)
+12. [options search install](https://search.nixos.org/options)
 ## Video
 - Best install
 ![Link Setup guide](https://www.youtube.com/watch?v=AGVXJ-TIv3Y)

@@ -8,12 +8,22 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e018385ceaa824d9",
+            "id": "df48777c1d0075c7",
+            "type": "leaf",
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "A faire.md"
+              }
+            }
+          },
+          {
+            "id": "fc331277a5cb37b3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OS/linux/distros/nixos/Home-manager/Appendix C. nix-darwin Module Options.md",
+                "file": "OS/cmd/linux/CMD.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,12 +31,12 @@
             }
           },
           {
-            "id": "8f01ccaf58fcfde9",
+            "id": "ccdc09ee9c5ed3c2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OS/linux/distros/nixos/Home-manager/Apprendix A..md",
+                "file": "OS/cmd/windows/comand line.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -34,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -71,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "line:(Model OSI)",
+                "query": "line:(cksum)",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -100,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OS/linux/distros/nixos/Home-manager/Apprendix A..md",
+                "file": "OS/cmd/windows/comand line.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OS/linux/distros/nixos/Home-manager/Apprendix A..md",
+                "file": "OS/cmd/windows/comand line.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OS/linux/distros/nixos/Home-manager/Apprendix A..md"
+                "file": "OS/cmd/windows/comand line.md"
               }
             }
           }
@@ -173,35 +183,35 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "8f01ccaf58fcfde9",
+  "active": "ccdc09ee9c5ed3c2",
   "lastOpenFiles": [
-    "OS/linux/distros/nixos/Home-manager/Appendix A. Configuration Options.md",
-    "OS/linux/distros/nixos/Home-manager/Apprendix A..md",
-    "OS/linux/distros/nixos/Home-manager/Appendix B. NixOS Module Options.md",
-    "OS/linux/distros/nixos/Home-manager/Appendix C. nix-darwin Module Options.md",
-    "OS/linux/distros/nixos/Home-manager/Appendix D. Tools.md",
-    "Untitled.md",
-    "OS/linux/distros/nixos/Home-manager/Nix-HomeManager.md",
-    "OS/linux/distros/nixos/NixOS.md",
-    "OS/linux/distros/nixos/Home-manager",
-    "OS/linux/distros/nixos/Package-manager.md",
-    "OS/linux/distros/nixos/Protocols.md",
-    "A faire.md",
-    "OS/linux/distros/nixos/Architecture.md",
-    "OS/linux/distros/nixos/Nix-Language.md",
-    "README.md",
-    "Best inspiration.md",
-    "Understanding Services and Processes (PID) in Computing.md",
-    "OS/linux/distros/nixos/cmd special/nix-event.md",
+    "OS/cmd/windows/doc.md",
+    "OS/cmd/linux/CMD.md",
+    "OS/cmd/linux/System and Process Information.md",
+    "OS/cmd/linux/Package Management (APT for DebianUbuntu).md",
+    "OS/cmd/linux/Network and Connectivity.md",
+    "OS/cmd/linux/Miscellaneous.md",
+    "OS/cmd/linux/File and Directory Management.md",
+    "OS/cmd/linux/Other Utilities.md",
     "OS/linux/distros/nixos/Advance topic.md",
+    "OS/cmd/linux/User and Group Management.md",
+    "OS/linux/distros/nixos/NixOS.md",
+    "A faire.md",
+    "tools/git.md",
+    "OS/cmd/Shell Built-ins and Programming.md",
+    "Programming/language/React/Module/Tailwindcss.md",
+    "OS/linux/distros/nixos/Home-manager/Nix-HomeManager.md",
+    "macos/vscode-macos-shortcuts.md",
+    "OS/linux/Vs-code-shortcut.md",
+    "misc/ssl-certs.md",
+    "networking/Server.md",
     "OS/linux/distros/nixos/cmd special/Utilities.md",
-    "OS/linux/distros/nixos/cmd special/nix-shell.md",
-    "OS/linux/distros/nixos/cmd special/nix-store.md",
-    "asset/NixOS Commun store cmd.md",
-    "OS/linux/distros/nixos/cmd special/nix-build.md",
-    "OS/linux/distros/nixos/cmd special/nix-channel.md",
-    "networking/network.md",
-    "asset/NixOS.md",
+    "OS/linux/distros/nixos/Nix-Language.md",
+    "OS/cmd/linux/System Configuration and Maintenance.md",
+    "OS/cmd/linux/Utility and Programming.md",
+    "OS/linux/awk.md",
+    "OS/cmd/linux/A.md",
+    "OS/linux/distros/nixos/Home-manager",
     "OS/linux/distos/nixos/cmd special",
     "OS/linux/distos/nixos",
     "OS/linux/distos",
