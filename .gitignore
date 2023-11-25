@@ -5,3 +5,7 @@ workspace.json
 .obsidian/workspace.json
 .obsidian/appearance.json
 .obsidian/workspace.json
+
+
+# Ignore Smart Connections folder because embeddings file is large and updated frequently
+.smart-connections

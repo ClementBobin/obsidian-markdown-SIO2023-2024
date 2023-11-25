@@ -146,7 +146,9 @@ The number of public #IP Version 4 addresses officially reached saturation on Fe
   
 ### Class:  
 >In the #IP network definition system version 4 ( #IPv4), the #IP addresses were divided into classes, according to the number of bytes that represent the network, itself determined by the first bits of the #IP address.  
-  
+
+![clase IP](https://imgs.search.brave.com/aWCrjzCCrl7IO8oVWyP6H85e7RVun-WmBHlCPk7K7dA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/aW5ldGRvYy5uZXQv/YXJ0aWNsZXMvYWRy/ZXNzYWdlLmlwdjQv/aW1hZ2VzL2NsYXNz/ZXMtYWRyZXNzZXMt/aXB2NC5wbmc)
+
 Due to the migration to #IPv6, this notion of class is now obsolete.  
   
 The #IP address of a device contains both a network identifier (NetID) and a device identifier (HostID)  
