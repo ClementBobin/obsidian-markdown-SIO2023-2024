@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FabHtml5",
+      "RiWindowsLine",
       "RiLoader4Fill",
       "RiHardDrive2Fill",
-      "RiFoldersFill",
-      "FabEnvira",
-      "FabSnowflake"
+      "RiFoldersFill"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -55,7 +55,12 @@
   "OS/Dual Boot.md": "FabListOl",
   "OS/linux/distros/nixos": "FabSnowflake",
   "OS/linux/Desktop Environement": "FabEnvira",
-  "OS/linux/DesktopManager": "RiFoldersFill",
   "OS/linux/distros": "RiHardDrive2Fill",
-  "OS/Boot.md": "RiLoader4Fill"
+  "OS/Boot.md": "RiLoader4Fill",
+  "OS/linux/Hyprland": "RiFoldersFill",
+  "OS/linux/window manager": "RiWindowsLine",
+  "Programming/Website": {
+    "iconName": "FabHtml5",
+    "inheritanceIcon": "RiHtml5Line"
+  }
 }

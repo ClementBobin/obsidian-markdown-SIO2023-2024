@@ -1300,8 +1300,14 @@ sudo rm -r /etc/nixos/configuration.nix
 10. [List of reference configuration](https://nixos.wiki/wiki/Configuration_Collection)
 11. [Exemple Flake](https://github.com/MatthiasBenaets/nixos-config)
 12. [options search install](https://search.nixos.org/options)
+13. [nix apprentissage from zero](https://zero-to-nix.com/)
 ## Video
 - Best install
 ![Link Setup guide](https://www.youtube.com/watch?v=AGVXJ-TIv3Y)
 - Normal install
 ![NixOS First Installation](https://www.youtube.com/watch?v=_Z32SYFbxpw)
+![move NixOS into a flake](https://www.youtube.com/watch?v=rEovNpg7J0M)
+![](https://www.youtube.com/watch?v=61wGzIv12Ds)
+![nix game](https://youtu.be/wpS3qIprHL0?si=ssgYnqvWl4oAft13)
+![nix host](https://www.youtube.com/watch?v=Cy4X0fjD0-Y)
+![server local](https://www.youtube.com/watch?v=DiDm5V_nmzE)

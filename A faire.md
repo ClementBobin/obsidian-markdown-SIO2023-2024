@@ -9,13 +9,16 @@ kanban-plugin: basic
 **Complete**
 - [x] **dream bird** language
 - [x] bun (node.js)
+- [x] chmod
+- [x] cat
+- [x] man
+- [x] modules
+- [x] snippet block math
 
 
 ## in work
 
-- [ ] Nix config + option general
 - [ ] encrypt data disk
-- [ ] Serv NixOS
 
 
 ## pause
@@ -25,6 +28,14 @@ kanban-plugin: basic
 
 
 ## finish
+
+- [ ] Nix config + option general
+- [ ] Serv NixOS
+
+
+***
+
+## Archive
 
 - [ ] network/network (adresse mac )
 - [ ] Network/network (modern)
@@ -44,12 +55,6 @@ kanban-plugin: basic
 - [ ] type of broad cast
 - [ ] tracepath asymm
 - [ ] port
-
-
-***
-
-## Archive
-
 - [x] b1-at cour 21/09
 - [ ] revoir diapo
 
