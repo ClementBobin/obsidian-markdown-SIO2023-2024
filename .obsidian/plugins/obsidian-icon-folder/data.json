@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FabHtml5",
       "RiWindowsLine",
       "RiLoader4Fill",
       "RiHardDrive2Fill",
-      "RiFoldersFill",
-      "FabEnvira"
+      "RiFoldersFill"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -58,5 +58,9 @@
   "OS/linux/distros": "RiHardDrive2Fill",
   "OS/Boot.md": "RiLoader4Fill",
   "OS/linux/Hyprland": "RiFoldersFill",
-  "OS/linux/window manager": "RiWindowsLine"
+  "OS/linux/window manager": "RiWindowsLine",
+  "Programming/Website": {
+    "iconName": "FabHtml5",
+    "inheritanceIcon": "RiHtml5Line"
+  }
 }
