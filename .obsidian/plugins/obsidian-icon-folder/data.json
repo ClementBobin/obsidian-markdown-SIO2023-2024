@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "FabHtml5",
-      "RiWindowsLine",
-      "RiLoader4Fill",
-      "RiHardDrive2Fill",
-      "RiFoldersFill"
+      "FabNewspaper",
+      "RiLockPasswordLine",
+      "FabBlog",
+      "RiScan2Line",
+      "FabWatchmanMonitoring"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -31,7 +31,6 @@
   "error": "RiErrorWarningFill",
   "hardware": "FabHardDrive",
   "infra": "FabBuilding",
-  "kubernetes": "FabShieldVirus",
   "macos": "RiMacbookFill",
   "misc": "FabFolderOpen",
   "networking": "FabNetworkWired",
@@ -62,5 +61,29 @@
   "Programming/Website": {
     "iconName": "FabHtml5",
     "inheritanceIcon": "RiHtml5Line"
-  }
+  },
+  "Project/blog": "FabBlog",
+  "Project/blog/blog.md": {
+    "iconName": "FabBlog",
+    "inheritanceIcon": "FabBlog"
+  },
+  "Project/home server": "FabServer",
+  "Project/home server/Dashboard": "RiCompass2Line",
+  "Project/home server/Gaming": "FabGamepad",
+  "Project/home server/Storage": "RiFolderHistoryLine",
+  "Project/home server/boot.md": "RiBarChartHorizontalFill",
+  "Project/home server/hypervisor": "RiComputerFill",
+  "Project/home server/monitoring": "FabWatchmanMonitoring",
+  "Project/home server/reverse proxy": "RiNavigationFill",
+  "Project/home server/streaming": "RiLiveFill",
+  "Project/home server/Gaming/linux": "FabLinux",
+  "Project/home server/Gaming/windows.md": "FabWindows",
+  "Project/home server/hypervisor/Proxmox.md": "RiAdminFill",
+  "Project/home server/streaming/Jellyfins.md": "FabAppStore",
+  "Project/home server/monitoring/uptime-kuma.md": "RiScan2Line",
+  "Project/home server/Gaming/linux/Nixos.md": "FabSnowflake",
+  "Project/home server/Docker": "FabDocker",
+  "docker/kubernetes": "FabShieldVirus",
+  "Project/home server/security": "RiLockPasswordLine",
+  "Project/home server/news": "FabNewspaper"
 }

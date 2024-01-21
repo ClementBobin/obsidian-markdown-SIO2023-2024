@@ -1,6 +1,6 @@
 # K9s
 
-K9s is a command line interface to easy up managing [Kubernetes Clusters](kubernetes/kubernetes.md).
+K9s is a command line interface to easy up managing [Kubernetes Clusters](kubernetes.md).
 
 Core features of k9s are for instance:
 - Editing of resource manifests

@@ -6,7 +6,7 @@ Type 1 hypervisors, also known as **bare-metal hypervisors**, run directly on th
 
 **Examples of Type 1 Hypervisors:**
 
-- [[Proxmox]]: Proxmox Virtual Environment is an open-source Type 1 hypervisor that combines two virtualization technologies: KVM (Kernel-based Virtual Machine) for virtual machines and LXC (Linux Containers) for lightweight container-based virtualization.
+- [[infra/proxmox]]: Proxmox Virtual Environment is an open-source Type 1 hypervisor that combines two virtualization technologies: KVM (Kernel-based Virtual Machine) for virtual machines and LXC (Linux Containers) for lightweight container-based virtualization.
 - [[Docker]]: Docker can also be considered a Type 1 hypervisor when using tools like Docker Desktop for Mac and Docker Desktop for Windows. It uses a lightweight Linux VM to run containers directly on the host OS.
 ### Type 2 Hypervisor 
 Type 2 hypervisors, also known as **hosted hypervisors**, run on top of a host operating system and are ideal for desktop or development use. They are simpler to set up and are suitable for scenarios where performance is less critical. 

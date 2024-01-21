@@ -756,7 +756,7 @@ Now your NixOS installation is complete
 		nix-env --uninstall firefox
 		```
 	- Configuration file: 
-		- [[NixOS#Initial configuration]]
+		- [[OS/linux/distros/nixos/NixOS#Initial configuration]]
 - Links
 	- [Packages](https://search.nixos.org/packages?channel=unstable&size=50&sort=relevance&type=packages)
 	- [Options](https://search.nixos.org/options?channel=unstable&size=50&sort=relevance&type=packages)
@@ -907,7 +907,7 @@ Now your NixOS installation is complete
 NixOS is a modern, open-source operating system that provides a declarative and purely functional approach to system configuration and package management. This guide will walk you through setting up a NixOS server. 
 ## Getting Started 
 Before you begin with the installation and configuration, make sure you have the necessary hardware and a basic understanding of Linux concepts and server management. 
-![[NixOS#NixOS#Initial configuration]]]
+![[OS/linux/distros/nixos/NixOS#NixOS#Initial configuration]]]
 ## Initial Configuration 
 Ensure that you have a clear understanding of the system requirements and the specific configuration you want to achieve for your NixOS server. Decide on the necessary hardware specifications, network settings, and other relevant parameters. 
 ## Installation 
@@ -925,7 +925,7 @@ then follow config
 - You can log in as **user `demo`**, **password `demo`**.
 - To obtain a root shell, run `sudo -i` in the terminal (`konsole`).
 #### Normal install
-[[NixOS#Installation]]
+[[OS/linux/distros/nixos/NixOS#Installation]]
 ### AWS Command Line
 
 You can also create an instance from the command line. For example, to create an instance in region `eu-west-1` using the EC2 API tools, just run:
