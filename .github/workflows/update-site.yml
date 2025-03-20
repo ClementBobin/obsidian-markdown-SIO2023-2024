@@ -18,10 +18,10 @@ jobs:
       - name: Update Year in Config if Necessary
         run: |
           CURRENT_YEAR=$(date +'%Y')
-          FOOTER_YEAR=$(grep -oP 'FOOTER = "© \K[0-9]+' config.toml)
+          FOOTER_YEAR=$(grep -oP 'FOOTER = "© \K[0-9]+' netlify.toml)
           
           if [ "$FOOTER_YEAR" != "$CURRENT_YEAR" ]; then
-            sed -i "s/FOOTER = \"© ${FOOTER_YEAR} Mirage - \"/FOOTER = \"© ${CURRENT_YEAR} Mirage - \"/" config.toml
+            sed -i "s/FOOTER = \"© ${FOOTER_YEAR} Mirage - \"/FOOTER = \"© ${CURRENT_YEAR} Mirage - \"/" netlify.toml
             echo "Footer year updated to ${CURRENT_YEAR}"
             git config --global user.name "github-actions[bot]"
             git config --global user.email "github-actions[bot]@users.noreply.github.com"
