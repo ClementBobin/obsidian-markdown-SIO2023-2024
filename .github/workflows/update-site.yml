@@ -1,0 +1,34 @@
+name: Update and Deploy Obsidian-Zola
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 1 * *' # Runs on the 1st day of every month at midnight UTC
+
+jobs:
+  update-site:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.8"
+
+      - name: Update Year in Config
+        run: |
+          CURRENT_YEAR=$(date +'%Y')
+          sed -i "s/FOOTER = \"© [0-9]\{4\} Mirage - \"/FOOTER = \"© ${CURRENT_YEAR} Mirage - \"/" config.toml
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add config.toml
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update footer year to ${CURRENT_YEAR}"
+          git push
