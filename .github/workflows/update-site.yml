@@ -1,4 +1,4 @@
-name: Update and Deploy Obsidian-Zola
+name: Update Footer Year
 
 on:
   push:
@@ -8,27 +8,26 @@ on:
     - cron: '0 0 1 * *' # Runs on the 1st day of every month at midnight UTC
 
 jobs:
-  update-site:
+  update-footer-year:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.8"
-
-      - name: Update Year in Config
+      - name: Update Year in Config if Necessary
         run: |
           CURRENT_YEAR=$(date +'%Y')
-          sed -i "s/FOOTER = \"© [0-9]\{4\} Mirage - \"/FOOTER = \"© ${CURRENT_YEAR} Mirage - \"/" config.toml
-
-      - name: Commit and Push Changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add config.toml
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update footer year to ${CURRENT_YEAR}"
-          git push
+          FOOTER_YEAR=$(grep -oP 'FOOTER = "© \K[0-9]+' config.toml)
+          
+          if [ "$FOOTER_YEAR" != "$CURRENT_YEAR" ]; then
+            sed -i "s/FOOTER = \"© ${FOOTER_YEAR} Mirage - \"/FOOTER = \"© ${CURRENT_YEAR} Mirage - \"/" config.toml
+            echo "Footer year updated to ${CURRENT_YEAR}"
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git add config.toml
+            git commit -m "Update footer year to ${CURRENT_YEAR}"
+            git push
+          else
+            echo "Footer year is already up-to-date."
+          fi
