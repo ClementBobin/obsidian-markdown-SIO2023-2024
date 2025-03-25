@@ -1,7 +1,7 @@
 [build]
 #command = "rm -rf __obsidian __site && git clone https://github.com/ClementBobin/obsidian-zola.git __site && __site/run.sh || true"
 command = "rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true && git clone https://github.com/ClementBobin/obsidian-zola.git __site && __site/run.sh"
-publish = "public"
+publish = "public" 
 
 [build.environment]
 # (Optional) Text in landing page button
