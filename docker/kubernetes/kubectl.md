@@ -18,7 +18,7 @@ choco install kubernetes-cli
 ### On Linux
 
 > [!INFO] Installing on WSL2
-> On WSL2 it's recommended to install Docker Desktop [[docker-desktop]], which automatically comes with kubectl.
+> On WSL2 it's recommended to install Docker Desktop [docker-desktop](https://www.docker.com/products/docker-desktop/), which automatically comes with kubectl.
 
 #### Download the latest release
 

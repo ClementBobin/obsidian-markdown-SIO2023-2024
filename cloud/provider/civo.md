@@ -22,21 +22,22 @@ civo instance create --hostname=<your-hostname> --sshkey=<your-ssh-key-name> --i
 
 **Parameters:**
 
-PARAMETER | LONG VERSION | DESCRIPTION
-| --- | --- | --- |
-| `-t` | `--diskimage` | the instance's disk image (from 'civo diskimage ls' command)|
-| `-l` | `--firewall` | the instance's firewall you can use the Name or the ID |
-`-l` | `--firewall` | the instance's firewall you can use the Name or the ID
-`-s` | `--hostname` | the instance's hostname
-`-u` | `--initialuser` | the instance's initial user
-`-r` | `--network` | the instance's network you can use the Name or the ID
-`-p` | `--publicip` | This should be either "none" or "create" (default "create")
-`-i` | `--size` | the instance's size (from 'civo instance size' command)
-`-k` | `--sshkey` | the instance's ssh key you can use the Name or the ID
-`-g` | `--tags` | the instance's tags
-`-w` | `--wait` | wait until the instance's is ready
+| PARAMETER | LONG VERSION    | DESCRIPTION                                                  |
+| --------- | --------------- | ------------------------------------------------------------ |
+| `-t`      | `--diskimage`   | the instance's disk image (from 'civo diskimage ls' command) |
+| `-l`      | `--firewall`    | the instance's firewall you can use the Name or the ID       |
+| `-l`      | `--firewall`    | the instance's firewall you can use the Name or the ID       |
+| `-s`      | `--hostname`    | the instance's hostname                                      |
+| `-u`      | `--initialuser` | the instance's initial user                                  |
+| `-r`      | `--network`     | the instance's network you can use the Name or the ID        |
+| `-p`      | `--publicip`    | This should be either "none" or "create" (default "create")  |
+| `-i`      | `--size`        | the instance's size (from 'civo instance size' command)      |
+| `-k`      | `--sshkey`      | the instance's ssh key you can use the Name or the ID        |
+| `-g`      | `--tags`        | the instance's tags                                          |
+| `-w`      | `--wait`        | wait until the instance's is ready                           |
 
 **Instance Sizes:**
+
 ID|SIZE|TYPE|CPU|MEMORY|SSD
 ---|---|---|---|---|---
 g3.xsmall|ExtraSmall|Instance|1|1024|25
@@ -53,6 +54,7 @@ g3.k3s.xlarge|ExtraLarge|Kubernetes|6|16384|15
 g3.k3s.2xlarge|2XLarge|Kubernetes|8|32768|15
 
 **Diskimages:**
+
 ID | NAME
 ---|---
 `9ffb043e-37d8-4b71-80ed-81227564944f` | centos-7

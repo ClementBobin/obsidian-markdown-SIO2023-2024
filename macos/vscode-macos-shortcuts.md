@@ -26,7 +26,7 @@
 ## Split editor
 | shortcut | description |
 | :------- | :---------- |
-| ⌘ + \    | split       |
+| ⌘ + (\\) | split       |
 
 ## Split Window focusing
 | shortcut | description                           |

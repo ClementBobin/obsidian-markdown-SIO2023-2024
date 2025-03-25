@@ -1,6 +1,6 @@
 # DNS
 
-DNS (Domain Name System) is a hierarchical distributed naming system used to translate human-readable domain names, such as `www.example.com`, into [[IP]] (Internet Protocol) addresses, such as 192.0.2.1, that computers use to identify each other on the Internet. DNS allows users to access websites and other Internet resources using easy-to-remember domain names instead of having to remember the numerical IP addresses that correspond to them.
+DNS (Domain Name System) is a hierarchical distributed naming system used to translate human-readable domain names, such as `www.example.com`, into IP (Internet Protocol) addresses, such as 192.0.2.1, that computers use to identify each other on the Internet. DNS allows users to access websites and other Internet resources using easy-to-remember domain names instead of having to remember the numerical IP addresses that correspond to them.
 
 
 ## How DNS works
