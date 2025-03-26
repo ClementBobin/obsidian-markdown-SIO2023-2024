@@ -75,7 +75,7 @@ Download Scalar API Client for your platform:
     ![[Pasted image 20250326094233.png]]
 2. **Manage environments** – Define variables for multiple servers.
     
-3. **Enable watch mode** – Auto-refresh on API changes.
+3. **Enable watch mode** – Auto-refresh on API changes by adding url off [openapi.json](./Scalar%20Integration).
     
 4. **Use OpenAPI Integration** – Import/export API specs.
     

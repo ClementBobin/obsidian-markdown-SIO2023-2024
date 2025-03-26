@@ -1,5 +1,3 @@
-# Scalar Integration Guide
-
 ## Overview
 
 Scalar provides seamless integrations with various frameworks and platforms, making API development easier and more efficient. It supports a wide range of technologies, including:
@@ -86,6 +84,13 @@ app.MapGet("/", () => "Hello world!");
 app.Run();
 ```
 
+## OpenAPI Support
+
+Once Scalar is integrated, you can:
+
+- **Import JSON**: Use the generated OpenAPI JSON in the [Scalar Client](./Scalar%20API%20Client) or [Scalar Docs](./Scalar%20Dashboard) for better API exploration.
+    
+- **Download OpenAPI JSON**: Export the OpenAPI specification to integrate with third-party tools or documentation platforms.
 ## Prebuilt Examples
 
 For ready-to-use implementations in different frameworks, check out the [Scalar API Examples Repository](https://github.com/ClementBobin/Api):

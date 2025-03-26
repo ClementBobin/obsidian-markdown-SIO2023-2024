@@ -27,7 +27,7 @@ Scalar Dashboard is a platform for managing API documentation, creating collabor
     
 4. Select the required sections:
     
-    - **References**: Upload a Swagger file for automatic documentation.
+    - **References**: Upload a Swagger [file]((./Scalar%20Integration) for automatic documentation .
         
     - **API Guides**: Create structured API guides.
         
@@ -57,24 +57,12 @@ Scalar Dashboard is a platform for managing API documentation, creating collabor
 - Invite team members under the "Members" section.
     
 - Adjust project settings in the "Settings" tab.
-    
 
-## Future Updates
-
-- **Import API Registry** (Coming soon)
-    
-- **Collaborative Workspaces** (Coming soon)
-    
-- **Multi-language SDK Generation** (Coming soon)
-    
-
-## Support
-
-For assistance, visit the **Contact Us** page or check the **Changelog** for updates.
-
-## Trial Period
-
-- The platform offers a trial period (visible at the bottom left of the dashboard).
-    
-- Ensure to check the expiration date and plan for continued access.
-    
+![[Pasted image 20250326185102.png]]
+![[Pasted image 20250326185156.png]]![[Pasted image 20250326185224.png]]
+![[Pasted image 20250326185320.png]]
+![[Pasted image 20250326185338.png]]
+![[Pasted image 20250326185400.png]]
+![[Pasted image 20250326185421.png]]
+![[Pasted image 20250326185449.png]]
+![[Pasted image 20250326185502.png]]
