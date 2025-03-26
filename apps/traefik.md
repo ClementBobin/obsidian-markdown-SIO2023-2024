@@ -1,5 +1,5 @@
 # Traefik
-Traefik is an open-source Edge Router for [Docker](docker/docker.md), and [Kubernetes](kubernetes.md) that makes publishing your services a fun and easy experience. It receives requests on behalf of your system and finds out which components are responsible for handling them.
+Traefik is an open-source Edge Router for [[Docker]], and [[Kubernetes]] that makes publishing your services a fun and easy experience. It receives requests on behalf of your system and finds out which components are responsible for handling them.
 
 ---
 ## Installation
@@ -10,7 +10,7 @@ TODO: WIP
 
 ### Kubernetes
 
-You can install Traefik via [Helm](tools/helm.md).
+You can install Traefik via [[Helm]].
 
 ```sh
 helm repo add traefik https://traefik.github.io/charts

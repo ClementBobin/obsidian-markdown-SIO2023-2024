@@ -1,12 +1,12 @@
 # Argo CD
-**Argo CD** is a declarative, GitOps continuous delivery tool for **[Kubernetes](kubernetes.md). It allows application definitions, configurations, and environments should be declarative and version controlled. Application deployment and lifecycle management should be automated, auditable, and easy to understand.
+**Argo CD** is a declarative, GitOps continuous delivery tool for [[Kubernetes]]. It allows application definitions, configurations, and environments should be declarative and version controlled. Application deployment and lifecycle management should be automated, auditable, and easy to understand.
 
 Documentation & Project Homepage: [Argo CD Docs](https://argo-cd.readthedocs.io/en/stable/)
 
 ---
 ## Installation
 
-1. Install Argo CD on a **[Kubernetes](kubernetes.md) Cluster, using [kubectl](kubectl.md)**.
+1. Install Argo CD on a **[[kubernetes.md]] Cluster, using [[kubectl]]**.
 
 ```bash
 kubectl create namespace argocd
@@ -14,7 +14,7 @@ kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
 
-2. Add **[Traefik](apps/traefik.md) IngressRoute. 
+2. Add **[[Traefik]] IngressRoute. 
 
 ```yaml
 apiVersion: traefik.containo.us/v1alpha1
@@ -61,9 +61,9 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 
 ### Add private GitHub Repositories
 
-1. Create a github token: https://github.com/settings/tokens
+1. Create a github token: [](https://github.com/settings/tokens)
 
-2. Add new repository in ArgoCD via **[kubectl](kubectl.md) or the GUI
+2. Add new repository in ArgoCD via **[[kubectl]] or the GUI
 
 ```yaml
 apiVersion: v1  

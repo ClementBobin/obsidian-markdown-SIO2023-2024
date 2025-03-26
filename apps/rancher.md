@@ -1,5 +1,5 @@
 # Rancher
-Rancher, the open-source multi-cluster orchestration platform, lets operations teams deploy, manage and secure enterprise [Kubernetes](kubernetes.md).
+Rancher, the open-source multi-cluster orchestration platform, lets operations teams deploy, manage and secure enterprise [[Kubernetes]].
 
 Project Homepage: [Rancher Homepage](https://www.rancher.com)
 

@@ -2,7 +2,7 @@
 
 Passbolt is a free and open-source password manager built for collaboration. Secure, flexible, and automation ready. Trusted by 10,000 organizations, including Fortune 500 companies, newspapers, governments and defence forces.
 
-Project Homepage: https://passbolt.com/
+[Project Homepage](https://passbolt.com/)
 
 ---
 ## Set Up
