@@ -1,4 +1,4 @@
-# [Options](https://nixos.org/manual/nix/unstable/command-ref/nix-store/add-fixed#options)
+ [Options](https://nixos.org/manual/nix/unstable/command-ref/nix-store/add-fixed#options)
 
 The following options are allowed for all `nix-store` operations, but may not always have an effect.
 

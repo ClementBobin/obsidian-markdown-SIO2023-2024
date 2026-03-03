@@ -67,7 +67,7 @@ bind-address = 0.0.0.0
 
 ## 🧑‍💻 **Connect via Code**
 
-> [!example] PHP See → [[Php.md]]
+> [!example] PHP See → [[Php]]
 
 You can also connect using:
 
@@ -168,7 +168,7 @@ Explore more features in the [official docs](https://mariadb.org/documentation/)
 
 ## 📚 **Related**
 
-- [[Php.md]]
+- [[Php]]
     
 - [[databases/postgres]]
     

@@ -195,7 +195,7 @@ db.your_collection_name.deleteMany({ key: "value" })
 >     
 > - [[Python]]
 >     
-> - [[PHP]]
+> - [[Php]]
 >     
 > - [[Go]]
 >     
@@ -212,7 +212,7 @@ db.your_collection_name.deleteMany({ key: "value" })
     
 - [[Metabase: Open Source Business Intelligence and Analytics]]
     
-- [[Php.md]]
+- [[Php]]
     
 
 ---

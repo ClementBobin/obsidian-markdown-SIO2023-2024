@@ -1,4 +1,4 @@
-# UEFI Boot
+UEFI Boot
 ## Introduction
 ## Getting Started
 ## Installation

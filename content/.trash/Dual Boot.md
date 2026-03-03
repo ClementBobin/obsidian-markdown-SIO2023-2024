@@ -1,4 +1,4 @@
-# Dual Boot
+ Dual Boot
 ## Introduction
 ## Getting Started
 ## Installation
