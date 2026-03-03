@@ -1,0 +1,22 @@
+{
+  "timestamps": false,
+  "timestampFormat": "auto",
+  "timestampInterval": "0",
+  "translate": false,
+  "language": "auto",
+  "verbosity": 1,
+  "whisperASRUrls": "http://localhost:9000",
+  "debug": false,
+  "transcriptionEngine": "swiftink",
+  "embedAdditionalFunctionality": true,
+  "embedSummary": true,
+  "embedOutline": true,
+  "embedKeywords": true,
+  "swiftink_access_token": null,
+  "swiftink_refresh_token": null,
+  "lineSpacing": "multi",
+  "encode": true,
+  "initialPrompt": "",
+  "vadFilter": false,
+  "wordTimestamps": false
+}
