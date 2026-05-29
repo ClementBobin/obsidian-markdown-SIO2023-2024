@@ -94,7 +94,7 @@
     "unist-util-visit": "^5.0.0",
     "vfile": "^6.0.3",
     "workerpool": "^9.3.3",
-    "ws": "^8.18.3",
+    "ws": "^8.20.1",
     "yargs": "^18.0.0"
   },
   "devDependencies": {
