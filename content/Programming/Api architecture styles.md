@@ -1,4 +1,4 @@
-# 🌐 Top 6 API Architecture Styles
+# 🌐 Top 7 API Architecture Styles
 A structured reference guide covering the most widely used API architecture styles — their overviews, pros, cons, use cases, and a summary to help you choose the right one.
 
 ---
@@ -139,7 +139,65 @@ Released by **Google in 2016**, gRPC uses **HTTP/2** and **Protocol Buffers (Pro
 
 ---
 
-## 6. ⚫ SOAP (Simple Object Access Protocol)
+## 6. 🟢 oRPC (Open Remote Procedure Call)
+
+### Overview
+<cite index="8-1">oRPC (OpenAPI Remote Procedure Call) provides end-to-end typesafe APIs in TypeScript while fully adhering to the OpenAPI specification.</cite> It sits between tRPC and gRPC in the ecosystem — giving you the developer ergonomics of writing functions while automatically generating a full OpenAPI spec that other languages and tools can consume. <cite index="14-1">It reached its v1 release in 2025</cite> and is considered a modern, TypeScript-first alternative to gRPC for full-stack JS/TS teams.
+
+### ✅ Pros
+- <cite index="10-1">End-to-end type safety covering inputs, outputs, and errors from client to server</cite>
+- <cite index="9-1">First-class OpenAPI support built in from the ground up — no plugins required</cite>
+- <cite index="14-1">Contract-first development: optionally define your API contract before implementation</cite>
+- <cite index="14-1">Supports SSE & streaming with full type safety, and works across Cloudflare, Deno, Bun, and Node.js</cite>
+- <cite index="14-1">Framework integrations with TanStack Query (React, Vue, Solid, Svelte, Angular), SWR, Pinia Colada, NestJS, and more</cite>
+- <cite index="14-1">Fully compatible with React Server Actions on Next.js and TanStack Start</cite>
+- <cite index="7-1">OpenAPI documentation is generated from the contract automatically — tools like Scalar can render it directly</cite>
+
+### ❌ Cons
+- <cite index="3-1">TypeScript dependency — teams using plain JavaScript or other languages won't benefit from its type-safe contracts</cite>
+- <cite index="11-1">Less suited for polyglot microservices — although oRPC generates OpenAPI specs, it's still primarily optimized for TypeScript-based stacks; large, multi-language systems might prefer gRPC or REST</cite>
+- <cite index="3-1">Contract-first workflow required — oRPC emphasizes defining API contracts before implementation, which teams that prefer code-first workflows may find restrictive</cite>
+- Extra complexity overhead for small or internal-only projects
+
+### 🎯 Use Cases
+- Full-stack TypeScript applications (Next.js, TanStack Start, etc.)
+- Teams that want tRPC-style DX but also need public OpenAPI documentation
+- APIs that need to be consumed by both TypeScript clients and external tools/languages
+- Projects integrating with API gateways, Scalar docs, or SDK generators
+
+### 📝 Summary
+> oRPC is the best of both worlds for TypeScript teams — RPC-style simplicity with automatic OpenAPI compliance. Think of it as tRPC with a public face. Not the right fit for polyglot or non-TypeScript environments.
+
+---
+
+## ⚔️ gRPC vs oRPC — Key Differences
+
+Both are RPC-style frameworks, but they solve different problems for different audiences.
+
+| Dimension | gRPC | oRPC |
+|---|---|---|
+| **Full Name** | Google Remote Procedure Call | Open Remote Procedure Call |
+| **Released By** | Google (2016) | Community / open-source (2024–2025) |
+| **Primary Language** | Polyglot (Go, Java, Python, C++, etc.) | TypeScript-first |
+| **Contract Format** | `.proto` files (Protocol Buffers) | OpenAPI spec (auto-generated from TypeScript) |
+| **Wire Format** | Binary (Protobuf) | JSON (HTTP) |
+| **Transport** | HTTP/2 | HTTP/1.1 or HTTP/2 |
+| **Browser Support** | ⚠️ Requires proxy (grpc-web) | ✅ Native |
+| **Type Safety** | ✅ via `.proto` schema | ✅ via TypeScript inference |
+| **OpenAPI Support** | ❌ Not natively | ✅ First-class, auto-generated |
+| **Streaming** | ✅ Bidirectional streaming | ✅ SSE & streaming (type-safe) |
+| **Performance** | 🚀 Very high (binary, HTTP/2) | ⚡ Fast (JSON, lightweight) |
+| **Learning Curve** | Steeper (Protobuf, codegen) | Gentler (just write TypeScript functions) |
+| **Best For** | High-performance polyglot backend services | Full-stack TypeScript apps needing OpenAPI |
+
+### 🧠 When to Pick Which
+
+- **Pick gRPC** when you need maximum performance, work across multiple languages (Go, Python, Java, Rust), and are communicating between internal backend services where browser access isn't needed.
+- **Pick oRPC** when your stack is TypeScript end-to-end, you want OpenAPI docs for free, and you need your API to be consumable by front-end frameworks, external tools, or SDKs without writing `.proto` files.
+
+---
+
+## 7. ⚫ SOAP (Simple Object Access Protocol)
 
 ### Overview
 SOAP is an older protocol that predates REST and mandates **XML-based messaging**. It provides strict formal standards for security (`WS-Security`) and transactional reliability, making it a staple in enterprise and legacy environments.
@@ -166,16 +224,18 @@ SOAP is an older protocol that predates REST and mandates **XML-based messaging*
 
 ## 📊 Comparison Summary
 
-| Feature | REST | GraphQL | WebSocket | Webhook | gRPC | SOAP |
-|---|---|---|---|---|---|---|
-| **Protocol** | HTTP | HTTP | TCP | HTTP | HTTP/2 | HTTP/SMTP |
-| **Data Format** | JSON/XML | JSON | Any | JSON | Protobuf | XML |
-| **Real-Time** | ❌ | ❌ | ✅ | Partial | ✅ | ❌ |
-| **Bi-Directional** | ❌ | ❌ | ✅ | ❌ | ✅ | ❌ |
-| **Type Safety** | ❌ | ✅ | ❌ | ❌ | ✅ | ✅ |
-| **Caching** | ✅ | ⚠️ | ❌ | ❌ | ❌ | ❌ |
-| **Browser Support** | ✅ | ✅ | ✅ | ✅ | ⚠️ | ⚠️ |
-| **Best For** | Web APIs | Complex data | Live apps | Events | Microservices | Enterprise |
+| Feature | REST | GraphQL | WebSocket | Webhook | gRPC | oRPC | SOAP |
+|---|---|---|---|---|---|---|---|
+| **Protocol** | HTTP | HTTP | TCP | HTTP | HTTP/2 | HTTP | HTTP/SMTP |
+| **Data Format** | JSON/XML | JSON | Any | JSON | Protobuf | JSON | XML |
+| **Real-Time** | ❌ | ❌ | ✅ | Partial | ✅ | ✅ (SSE) | ❌ |
+| **Bi-Directional** | ❌ | ❌ | ✅ | ❌ | ✅ | ⚠️ | ❌ |
+| **Type Safety** | ❌ | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| **OpenAPI Support** | ⚠️ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ |
+| **Caching** | ✅ | ⚠️ | ❌ | ❌ | ❌ | ⚠️ | ❌ |
+| **Browser Support** | ✅ | ✅ | ✅ | ✅ | ⚠️ | ✅ | ⚠️ |
+| **Language Support** | Any | Any | Any | Any | Polyglot | TypeScript-first | Any |
+| **Best For** | Web APIs | Complex data | Live apps | Events | Microservices | TS full-stack | Enterprise |
 
 ---
 
@@ -185,10 +245,11 @@ SOAP is an older protocol that predates REST and mandates **XML-based messaging*
 - **Complex front-end with many data relationships?** → **GraphQL**
 - **Need live, real-time updates (chat, games, dashboards)?** → **WebSocket**
 - **Reacting to third-party events (payments, CI/CD)?** → **Webhook**
-- **High-performance internal service-to-service comms?** → **gRPC**
+- **High-performance internal service-to-service comms (polyglot)?** → **gRPC**
+- **Full-stack TypeScript with OpenAPI docs out of the box?** → **oRPC**
 - **Integrating with legacy enterprise or regulated systems?** → **SOAP**
 
 ---
 
 ## 🏷️ Tags
-#api-architecture #rest #graphql #websocket #webhook #grpc #soap #api-design #developer-reference #api
+#api-architecture #rest #graphql #websocket #webhook #grpc #orpc #soap #api-design #developer-reference #typescript #openapi #api
